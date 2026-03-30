@@ -116,6 +116,17 @@ p {
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
+.border-dashed-red {
+  border: 1px dashed #ea0000 !important;
+  color: #ea0000 !important;
+}
+
+.btn-variant-selected {
+  background-color: #ea0000 !important;
+  border-color: #ea0000 !important;
+  color: white !important;
+}
+
 /* Mobile Responsive Overrides */
 @media (max-width: 991.98px) {
   .img-mobile-reset {
