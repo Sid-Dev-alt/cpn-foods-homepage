@@ -67,12 +67,12 @@ function ProductCard({ product }) {
 
           <h6 className="fw-bold mb-3" style={{ fontSize: '0.75rem' }}>IDEAL WITH</h6>
           <div className="d-flex gap-3">
-            {product.idealWith.includes('BREAKFAST') && (
+            {product.idealWith?.some(i => i.mealType === 'BREAKFAST') && (
               <div className="d-flex align-items-center small">
                 <span className="bg-success bg-opacity-25 rounded-circle p-1 me-2 d-flex"><PiSunDimFill /></span> Breakfast
               </div>
             )}
-            {product.idealWith.includes('LUNCH_DINNER') && (
+            {product.idealWith?.some(i => i.mealType === 'LUNCH_DINNER') && (
               <div className="d-flex align-items-center small">
                 <span className="bg-info bg-opacity-25 rounded-circle p-1 me-2 d-flex"><PiMoonFill /></span> Lunch/Dinner
               </div>
