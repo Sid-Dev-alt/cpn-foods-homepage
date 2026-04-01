@@ -23,16 +23,16 @@ function Header() {
           {/* Navigation Links */}
           <nav className="d-none d-lg-flex ml-auto justify-content-center flex-grow-1">
             <ul className="list-unstyled d-flex m-0 fw-bold" style={{ fontSize: '0.9rem', letterSpacing: '0.5px' }}>
-              <li className="mx-3"><Link to="/" className="text-decoration-none text-cpn-red">HOME +</Link></li>
-              <li className="mx-3"><Link to="/masalas" className="text-decoration-none text-dark hover-red">MASALAS +</Link></li>
-              <li className="mx-3"><a href="#" className="text-decoration-none text-dark hover-red">CONTACT +</a></li>
+              <li className="mx-3"><Link to="/" className="text-decoration-none text-cpn-red">HOME</Link></li>
+              <li className="mx-3"><Link to="/masalas" className="text-decoration-none text-dark hover-red">MASALAS</Link></li>
+              <li className="mx-3"><a href="#" className="text-decoration-none text-dark hover-red">CONTACT</a></li>
             </ul>
           </nav>
 
           {/* Icons Context */}
           <div className="d-flex align-items-center">
             <a href="#" className="text-dark hover-red me-4 fs-4"><BiSearch /></a>
-            
+
             {/* Cart Icon */}
             <Link to="/cart" className="text-dark hover-red me-4 fs-4 position-relative">
               <BiCart />
@@ -58,7 +58,7 @@ function Header() {
                 </ul>
               </div>
             ) : (
-              <button 
+              <button
                 onClick={loginWithGoogle}
                 className="btn btn-outline-dark d-flex align-items-center gap-2 rounded-pill px-3 py-1 fw-bold"
                 style={{ fontSize: '0.8rem' }}

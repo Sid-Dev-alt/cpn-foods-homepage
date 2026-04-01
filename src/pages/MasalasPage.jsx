@@ -147,7 +147,8 @@ function MasalasPage() {
         query += `&idealWith=${activeMeals.join(',')}`;
       }
 
-      const res = await axios.get(`http://localhost:8080/api/v1/masalas${query}`);
+      const API_URL = import.meta.env.VITE_API_URL || 'https://cpn-backend-xmcl.onrender.com';
+      const res = await axios.get(`${API_URL}/api/v1/masalas${query}`);
       setProducts(res.data);
     } catch (error) {
       console.error("Error fetching masalas:", error);
