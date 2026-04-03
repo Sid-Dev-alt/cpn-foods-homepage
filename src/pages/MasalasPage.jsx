@@ -138,8 +138,13 @@ function MasalasPage() {
     SNACK: false
   });
 
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
   const fetchMasalas = async () => {
     try {
+      setIsLoading(true);
+      setError(null);
       const activeMeals = Object.keys(idealWith).filter(k => idealWith[k]);
       let query = `?maxSweet=${sweet}&maxSour=${sour}&maxTangy=${tangy}&maxSpice=${spice}`;
       if (search) query += `&search=${search}`;
@@ -152,11 +157,20 @@ function MasalasPage() {
       setProducts(res.data);
     } catch (error) {
       console.error("Error fetching masalas:", error);
+      setError("Failed to fetch products. The backend might be waking up or there is a network error.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
   useEffect(() => {
-    fetchMasalas();
+    const handler = setTimeout(() => {
+      fetchMasalas();
+    }, 500);
+
+    return () => {
+      clearTimeout(handler);
+    };
   }, [search, sweet, sour, tangy, spice, idealWith]);
 
   const handleMealToggle = (meal) => {
@@ -254,11 +268,40 @@ function MasalasPage() {
           <div className="col-lg-9">
             <p className="text-muted small mb-4">SHOWING {products.length} OF {products.length} RESULTS</p>
 
-            <AnimatePresence mode="popLayout">
-              {products.map(product => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </AnimatePresence>
+            {isLoading && (
+              <div className="text-center py-5">
+                <div className="spinner-border text-danger" role="status">
+                  <span className="visually-hidden">Loading...</span>
+                </div>
+                <p className="text-muted mt-3 small">Loading products... (This may take up to 50 seconds if the free server is waking up)</p>
+              </div>
+            )}
+
+            {error && !isLoading && (
+              <div className="alert alert-danger d-flex align-items-center justify-content-between" role="alert">
+                <span>{error}</span>
+                <button className="btn btn-danger btn-sm" onClick={() => { setIsLoading(true); fetchMasalas(); }}>Retry</button>
+              </div>
+            )}
+
+            {!isLoading && !error && products.length === 0 && (
+              <div className="text-center py-5">
+                <p className="text-muted">No masalas found matching your filters.</p>
+                <button className="btn btn-outline-danger mt-2" onClick={() => {
+                  setSearch('');
+                  setSweet(5); setSour(5); setTangy(5); setSpice(5);
+                  setIdealWith({ BREAKFAST: false, LUNCH_DINNER: false, SNACK: false });
+                }}>Clear Filters</button>
+              </div>
+            )}
+
+            {!isLoading && !error && (
+              <AnimatePresence mode="popLayout">
+                {products.map(product => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </AnimatePresence>
+            )}
 
           </div>
         </div>
