@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import cpnLogoRed from '../img/cpn_logo_red.png';
 import { BiSearch, BiCart, BiUser } from 'react-icons/bi';
-import { HiOutlineMenuAlt4 } from 'react-icons/hi';
+import { HiOutlineMenuAlt4, HiX } from 'react-icons/hi';
 import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function Header() {
   const { user, loginWithGoogle, logout } = useAuth();
   const { cartCount } = useCart();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-white sticky-top shadow-sm" style={{ borderBottom: '1px solid #f0f0f0' }}>
@@ -67,11 +69,42 @@ function Header() {
               </button>
             )}
 
-            <a href="#" className="text-dark hover-red ms-4 fs-3 d-lg-none"><HiOutlineMenuAlt4 /></a>
+            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="btn btn-link text-dark hover-red ms-4 fs-3 p-0 d-lg-none" style={{ textDecoration: 'none' }}>
+              {isMobileMenuOpen ? <HiX /> : <HiOutlineMenuAlt4 />}
+            </button>
           </div>
 
         </div>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="d-lg-none bg-white border-top overflow-hidden shadow-sm"
+          >
+            <div className="container-fluid px-4 py-3">
+              <ul className="list-unstyled m-0 fw-bold d-flex flex-column gap-3" style={{ fontSize: '1rem' }}>
+                <li><Link to="/" className="text-decoration-none text-cpn-red d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>HOME</Link></li>
+                <li><Link to="/masalas" className="text-decoration-none text-dark d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>MASALAS</Link></li>
+                <li><a href="#" className="text-decoration-none text-dark d-block py-2">CONTACT</a></li>
+                <li className="pt-2 border-top">
+                  {user ? (
+                    <button className="btn btn-outline-danger w-100" onClick={() => { logout(); setIsMobileMenuOpen(false); }}>Logout All Devices</button>
+                  ) : (
+                    <button onClick={() => { loginWithGoogle(); setIsMobileMenuOpen(false); }} className="btn btn-dark w-100 d-flex align-items-center justify-content-center gap-2 py-2">
+                      <BiUser /> LOGIN / REGISTER
+                    </button>
+                  )}
+                </li>
+              </ul>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

@@ -65,32 +65,49 @@ function CartPage() {
                   exit={{ opacity: 0, x: 20 }}
                   className="card border-0 shadow-sm rounded-3 mb-3 p-3"
                 >
-                  <div className="d-flex align-items-center gap-4">
+                  <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3 gap-md-4">
                     {/* Item Image */}
-                    <div className="bg-light rounded p-2" style={{ width: '100px', height: '100px' }}>
-                      <img src={item.imageUrl} alt={item.name} className="w-100 h-100" style={{ objectFit: 'contain' }} />
+                    <div className="d-flex align-items-center gap-3 w-100 w-md-auto">
+                      <div className="bg-light rounded p-2 flex-shrink-0" style={{ width: '80px', height: '80px' }}>
+                        <img src={item.imageUrl} alt={item.name} className="w-100 h-100" style={{ objectFit: 'contain' }} />
+                      </div>
+                      {/* Item Info on Mobile */}
+                      <div className="flex-grow-1 d-md-none">
+                        <h6 className="fw-bold m-0">{item.name}</h6>
+                        <p className="text-muted small m-0">{item.variant.weightLabel}</p>
+                        <div className="d-flex justify-content-between align-items-end mt-2">
+                          <p className="text-danger fw-bold m-0">₹{item.variant.price}</p>
+                          <button className="btn btn-link text-muted p-0" onClick={() => removeFromCart(item.id, item.variant.id)}>
+                            <BiTrash />
+                          </button>
+                        </div>
+                      </div>
                     </div>
 
-                    {/* Item Info */}
-                    <div className="flex-grow-1">
+                    {/* Item Info on Desktop */}
+                    <div className="flex-grow-1 d-none d-md-block">
                       <h6 className="fw-bold m-0">{item.name}</h6>
                       <p className="text-muted small m-0">{item.variant.weightLabel}</p>
                       <p className="text-danger fw-bold m-0 mt-2">₹{item.variant.price}</p>
                     </div>
 
-                    {/* Quantity Controls */}
-                    <div className="d-flex align-items-center border rounded-pill px-2 py-1" style={{ width: '100px' }}>
-                      <button className="btn btn-link btn-sm p-0 text-dark" onClick={() => updateQuantity(item.id, item.variant.id, item.quantity - 1)}><BiMinus /></button>
-                      <span className="fw-bold px-2 small">{item.quantity}</span>
-                      <button className="btn btn-link btn-sm p-0 text-dark" onClick={() => updateQuantity(item.id, item.variant.id, item.quantity + 1)}><BiPlus /></button>
-                    </div>
+                    {/* Quantity & Total */}
+                    <div className="d-flex w-100 w-md-auto justify-content-between align-items-center mt-3 mt-md-0 border-top border-md-0 pt-3 pt-md-0">
+                      {/* Quantity Controls */}
+                      <div className="d-flex align-items-center border rounded-pill px-2 py-1 bg-white" style={{ width: '100px' }}>
+                        <button className="btn btn-link btn-sm p-0 text-dark" onClick={() => updateQuantity(item.id, item.variant.id, item.quantity - 1)}><BiMinus /></button>
+                        <span className="fw-bold px-2 small mx-auto">{item.quantity}</span>
+                        <button className="btn btn-link btn-sm p-0 text-dark" onClick={() => updateQuantity(item.id, item.variant.id, item.quantity + 1)}><BiPlus /></button>
+                      </div>
 
-                    {/* Total & Remove */}
-                    <div className="text-end" style={{ width: '120px' }}>
-                      <p className="fw-bold m-0">₹{item.variant.price * item.quantity}</p>
-                      <button className="btn btn-link text-muted p-0 mt-1" onClick={() => removeFromCart(item.id, item.variant.id)}>
-                        <BiTrash />
-                      </button>
+                      {/* Total & Remove Desktop */}
+                      <div className="text-end d-flex flex-column align-items-end" style={{ minWidth: '80px' }}>
+                        <p className="text-muted small m-0 d-md-none">Subtotal</p>
+                        <p className="fw-bold m-0 fs-5 fs-md-6">₹{item.variant.price * item.quantity}</p>
+                        <button className="btn btn-link text-muted p-0 mt-1 d-none d-md-block" onClick={() => removeFromCart(item.id, item.variant.id)}>
+                          <BiTrash />
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </motion.div>

@@ -60,7 +60,7 @@ function ProductCard({ product }) {
         </div>
 
         {/* Product Details */}
-        <div className="col-md-5 p-4">
+        <div className="col-md-5 p-4 pb-md-4 pb-0">
           <h4 className="fw-bold text-dark mb-1">{product.name}</h4>
           <p className="text-muted small mb-3">{product.subtitle}</p>
           <p className="text-dark opacity-75 small mb-4">{product.description}</p>
@@ -80,8 +80,12 @@ function ProductCard({ product }) {
           </div>
         </div>
 
+        <div className="col-12 d-md-none px-4">
+          <hr className="opacity-10 my-0"/>
+        </div>
+
         {/* Add to Cart Options */}
-        <div className="col-md-4 p-4 border-start border-light d-flex flex-column justify-content-center">
+        <div className="col-md-4 p-4 d-flex flex-column justify-content-center" style={{ borderLeft: '1px solid rgba(0,0,0,0.05)' }}>
           <p className="small mb-1 text-dark" style={{ opacity: 0.8 }}>Options</p>
           <div className="d-flex flex-wrap gap-2 mb-4">
             {product.variants?.map((v) => (
@@ -140,6 +144,7 @@ function MasalasPage() {
 
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
 
   const fetchMasalas = async () => {
     try {
@@ -185,11 +190,22 @@ function MasalasPage() {
         <h1 className="text-white fw-bold display-4 m-0" style={{ letterSpacing: '-1px' }}>Masalas</h1>
       </div>
 
-      <div className="container-fluid px-4 px-lg-5 py-5">
+      <div className="container-fluid px-4 px-lg-5 py-4 py-lg-5">
+        
+        {/* Mobile Filter Toggle */}
+        <div className="d-lg-none mb-4">
+          <button 
+            className="btn btn-outline-dark w-100 fw-bold d-flex align-items-center justify-content-center gap-2"
+            onClick={() => setIsMobileFiltersOpen(!isMobileFiltersOpen)}
+          >
+            <BiSearch /> {isMobileFiltersOpen ? 'HIDE FILTERS' : 'FILTER & SEARCH MASALAS'}
+          </button>
+        </div>
+
         <div className="row">
 
           {/* LEFT SIDEBAR */}
-          <div className="col-lg-3 pe-lg-5 mb-5 mb-lg-0">
+          <div className={`col-lg-3 pe-lg-5 mb-5 mb-lg-0 ${isMobileFiltersOpen ? 'd-block' : 'd-none d-lg-block'}`}>
             {/* Search */}
             <div className="mb-5">
               <h6 className="fw-bold text-dark mb-3" style={{ fontSize: '0.8rem', letterSpacing: '0.5px' }}>SEARCH WITHIN MASALAS</h6>
