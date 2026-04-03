@@ -46,11 +46,11 @@ function ProductCard({ product }) {
   };
 
   return (
-    <motion.div 
+    <motion.div
       layout
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="card border-0 shadow-sm rounded-3 mb-4 overflow-hidden position-relative" 
+      className="card border-0 shadow-sm rounded-3 mb-4 overflow-hidden position-relative"
       style={{ border: '2px solid #e7dfd1' }}
     >
       <div className="row g-0">
@@ -85,8 +85,8 @@ function ProductCard({ product }) {
           <p className="small mb-1 text-dark" style={{ opacity: 0.8 }}>Options</p>
           <div className="d-flex flex-wrap gap-2 mb-4">
             {product.variants?.map((v) => (
-              <button 
-                key={v.id} 
+              <button
+                key={v.id}
                 onClick={() => setSelectedVariant(v)}
                 className={`btn btn-sm px-2 py-1 transition-all rounded-2 fw-medium ${selectedVariant?.id === v.id ? 'btn-variant-selected shadow-sm' : 'bg-white border-dashed-red'}`}
                 style={{ fontSize: '0.85rem' }}
@@ -111,7 +111,7 @@ function ProductCard({ product }) {
             </div>
           </div>
 
-          <button 
+          <button
             className={`btn ${added ? 'btn-dark' : 'btn-danger'} rounded-pill w-100 fw-bold py-2 shadow-sm transition-all`}
             onClick={handleAddToCart}
             disabled={!selectedVariant}
@@ -273,7 +273,7 @@ function MasalasPage() {
                 <div className="spinner-border text-danger" role="status">
                   <span className="visually-hidden">Loading...</span>
                 </div>
-                <p className="text-muted mt-3 small">Loading products... (This may take up to 50 seconds if the free server is waking up)</p>
+                <p className="text-muted mt-3 small">Loading products...</p>
               </div>
             )}
 
