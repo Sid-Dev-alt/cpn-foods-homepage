@@ -50,6 +50,7 @@ function Header() {
                       <Link to="/products/spices/chilli-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Chilli Powder</Link>
                       <Link to="/products/spices/haldi-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Haldi Powder</Link>
                       <Link to="/products/natural-sweeteners/jaggery" className="dropdown-item py-2 fw-medium text-dark hover-red">Jaggery</Link>
+                      <Link to="/jaggery-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Jaggery Powder</Link>
                       <Link to="/products/superfoods/moringa-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Moringa Powder</Link>
                       <Link to="/products" className="dropdown-item py-2 fw-medium text-dark hover-red border-top border-light">All Products</Link>
                     </motion.div>
@@ -128,6 +129,7 @@ function Header() {
                       <li><Link to="/products/spices/chilli-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Chilli Powder</Link></li>
                       <li><Link to="/products/spices/haldi-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Haldi Powder</Link></li>
                       <li><Link to="/products/natural-sweeteners/jaggery" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Jaggery</Link></li>
+                      <li><Link to="/jaggery-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Jaggery Powder</Link></li>
                       <li><Link to="/products/superfoods/moringa-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Moringa Powder</Link></li>
                       <li><Link to="/products" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>All Products</Link></li>
                     </ul>

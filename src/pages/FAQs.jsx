@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const faqCategories = [
   {
@@ -112,12 +112,96 @@ const faqCategories = [
       {
         q: 'What are the types of jaggery powder?',
         a: 'Jaggery powder is available in three main types: Sugarcane jaggery powder, Coconut jaggery powder, and Palm jaggery powder.'
+      },
+      {
+        q: 'What is sugarcane jaggery powder?',
+        a: 'Sugarcane jaggery powder is made from concentrated sugarcane juice and has a rich, caramel-like sweetness.'
+      },
+      {
+        q: 'What is coconut jaggery powder?',
+        a: 'Coconut jaggery powder is made from the sap of coconut palm flowers and is known for mild sweetness.'
+      },
+      {
+        q: 'What is palm jaggery powder?',
+        a: 'Palm jaggery powder is made from palm tree sap and has a darker colour and stronger, earthy flavour.'
+      },
+      {
+        q: 'Which jaggery powder is best for daily use?',
+        a: 'Sugarcane jaggery powder is most commonly used for daily cooking, while coconut jaggery powder is preferred for lighter sweetness.'
+      },
+      {
+        q: 'Is jaggery powder better than white sugar?',
+        a: 'Jaggery powder is less processed and retains natural minerals compared to white sugar.'
+      },
+      {
+        q: 'Is jaggery powder suitable for tea, coffee, and baking?',
+        a: 'Yes. Jaggery powder dissolves easily and is suitable for beverages, cooking, and baking.'
+      }
+    ]
+  },
+  {
+    id: 'supply-quality',
+    title: 'SUPPLY & QUALITY – FAQs',
+    questions: [
+      {
+        q: 'Does CPN Foods supply products in bulk?',
+        a: 'Yes. CPN Foods supplies products in retail, bulk, institutional, and export quantities.'
+      },
+      {
+        q: 'Are CPN Foods products free from artificial additives?',
+        a: 'Yes. CPN Foods focuses on natural sourcing and avoids artificial colours and chemical additives.'
+      },
+      {
+        q: 'How should these products be stored?',
+        a: 'All products should be stored in a cool, dry place in airtight containers to maintain freshness.'
       }
     ]
   }
 ];
 
 export default function FAQs() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'faq-schema';
+    script.innerHTML = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Guntur chilli?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Guntur chilli is a high-pungency red chilli variety grown in Andhra Pradesh, known for strong heat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is moringa powder safe for daily use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, moringa powder can be consumed daily in moderate quantities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is jaggery powder better than white sugar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jaggery powder is less processed and retains natural minerals compared to white sugar."
+          }
+        }
+      ]
+    });
+    document.head.appendChild(script);
+
+    return () => {
+      const el = document.getElementById('faq-schema');
+      if (el) el.remove();
+    };
+  }, []);
+
   return (
     <div className="container py-5 mt-4">
       {/* Header Section */}
@@ -137,7 +221,7 @@ export default function FAQs() {
                 <span className="fs-2 me-3">{category.icon}</span>
                 <h2 className="fw-bold mb-0 text-uppercase h4">{category.title}</h2>
               </div>
-              
+
               <div className="row g-4">
                 {category.questions.map((item, index) => (
                   <div key={index} className="col-12 col-md-6">

@@ -13,7 +13,7 @@ export default function HaldiPowder() {
         "@type": "Brand",
         "name": "CPN Foods"
       },
-      "description": "Pure Indian turmeric powder known for its rich yellow colour, strong aroma, and high curcumin content. An essential spice for cooking and traditional wellness.",
+      "description": "Haldi powder made from Indian turmeric rhizomes, valued for colour, flavour, and traditional use in Indian cooking.",
       "category": "Spices",
       "countryOfOrigin": "IN",
       "manufacturer": {

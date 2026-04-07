@@ -8,12 +8,12 @@ export default function Jaggery() {
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": "Jaggery (Natural Sweetener)",
+      "name": "Jaggery",
       "brand": {
         "@type": "Brand",
         "name": "CPN Foods"
       },
-      "description": "Traditional natural sweetener made by concentrating sugarcane juice without chemicals or refining. Retains natural minerals and nutrients.",
+      "description": "Traditional natural sweetener made from sugarcane juice without chemical refining.",
       "category": "Natural Sweeteners",
       "countryOfOrigin": "IN",
       "manufacturer": {
