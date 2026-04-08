@@ -36,11 +36,27 @@ const products = [
   },
   {
     id: 5,
-    name: 'Moringa Powder',
+    name: 'Moringa Leaf Powder',
     category: 'Superfoods',
-    path: '/products/superfoods/moringa-powder',
+    path: '/products/superfoods/moringa-leaf-powder',
     image: 'https://placehold.co/600x400',
     description: 'A natural superfood from Indian Moringa leaves, rich in nutrients.'
+  },
+  {
+    id: 6,
+    name: 'Moringa Karam Poodi',
+    category: 'Spices & Podis',
+    path: '/products/spices/moringa-karam-poodi',
+    image: 'https://placehold.co/600x400',
+    description: 'Authentic Andhra style Moringa Kaaram Podi, blending health and tradition.'
+  },
+  {
+    id: 7,
+    name: 'Curry Powder (Kurra Karam)',
+    category: 'Spices & Podis',
+    path: '/products/spices/kura-karam',
+    image: 'https://placehold.co/600x400',
+    description: 'A powerful blend of 14 carefully selected spices, your complete curry solution.'
   }
 ];
 

@@ -51,13 +51,15 @@ function Header() {
                       <Link to="/products/spices/haldi-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Haldi Powder</Link>
                       <Link to="/products/natural-sweeteners/jaggery" className="dropdown-item py-2 fw-medium text-dark hover-red">Jaggery</Link>
                       <Link to="/jaggery-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Jaggery Powder</Link>
-                      <Link to="/products/superfoods/moringa-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Moringa Powder</Link>
+                      <Link to="/products/superfoods/moringa-leaf-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Moringa Leaf Powder</Link>
+                      <Link to="/products/spices/moringa-karam-poodi" className="dropdown-item py-2 fw-medium text-dark hover-red">Moringa Karam Poodi</Link>
+                      <Link to="/products/spices/kura-karam" className="dropdown-item py-2 fw-medium text-dark hover-red">Curry Powder (Kurra Karam)</Link>
                       <Link to="/products" className="dropdown-item py-2 fw-medium text-dark hover-red border-top border-light">All Products</Link>
                     </motion.div>
                   )}
                 </AnimatePresence>
               </li>
-              <li className="mx-3"><Link to="/masalas" className="text-decoration-none text-dark hover-red">MASALAS</Link></li>
+              <li className="mx-3"><Link to="/shop" className="text-decoration-none text-dark hover-red">SHOP</Link></li>
               <li className="mx-3"><Link to="/about-us" className="text-decoration-none text-dark hover-red">ABOUT</Link></li>
               <li className="mx-3"><Link to="/faqs" className="text-decoration-none text-dark hover-red">FAQs</Link></li>
             </ul>
@@ -130,12 +132,14 @@ function Header() {
                       <li><Link to="/products/spices/haldi-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Haldi Powder</Link></li>
                       <li><Link to="/products/natural-sweeteners/jaggery" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Jaggery</Link></li>
                       <li><Link to="/jaggery-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Jaggery Powder</Link></li>
-                      <li><Link to="/products/superfoods/moringa-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Moringa Powder</Link></li>
+                      <li><Link to="/products/superfoods/moringa-leaf-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Moringa Leaf Powder</Link></li>
+                      <li><Link to="/products/spices/moringa-karam-poodi" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Moringa Karam Poodi</Link></li>
+                      <li><Link to="/products/spices/kura-karam" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Curry Powder (Kurra Karam)</Link></li>
                       <li><Link to="/products" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>All Products</Link></li>
                     </ul>
                   </div>
                 </li>
-                <li><Link to="/masalas" className="text-decoration-none text-dark d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>MASALAS</Link></li>
+                <li><Link to="/shop" className="text-decoration-none text-dark d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>SHOP</Link></li>
                 <li><Link to="/about-us" className="text-decoration-none text-dark d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>ABOUT</Link></li>
                 <li><Link to="/faqs" className="text-decoration-none text-dark d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>FAQs</Link></li>
                 <li className="pt-2 border-top">

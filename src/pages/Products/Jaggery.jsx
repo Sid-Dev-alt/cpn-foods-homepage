@@ -204,7 +204,7 @@ export default function Jaggery() {
           </section>
 
           {/* Packaging & Supply Options */}
-          <section className="mb-5">
+          {/* <section className="mb-5">
             <h2 className="fw-bold mb-4">Packaging & Supply Options</h2>
             <ul className="text-muted lh-lg mb-4 ms-3">
               <li>Jaggery blocks</li>
@@ -212,7 +212,7 @@ export default function Jaggery() {
               <li>Jaggery powder</li>
               <li>Retail & bulk packaging</li>
             </ul>
-          </section>
+          </section> */}
         </div>
 
         {/* Sidebar / Additional Info */}

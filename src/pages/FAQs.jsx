@@ -33,27 +33,27 @@ const faqCategories = [
   },
   {
     id: 'moringa',
-    title: 'MORINGA POWDER – FAQs',
+    title: 'MORINGA LEAF POWDER – FAQs',
     questions: [
       {
-        q: 'What is moringa powder?',
-        a: 'Moringa powder is made by drying and grinding the leaves of the moringa plant, also known as the drumstick tree.'
+        q: 'What is moringa leaf powder?',
+        a: 'Moringa leaf powder is made by drying and grinding the leaves of the moringa plant, also known as the drumstick tree.'
       },
       {
-        q: 'Is moringa powder safe for daily use?',
-        a: 'Yes. Moringa powder can be consumed daily in moderate quantities as part of a balanced diet.'
+        q: 'Is moringa leaf powder safe for daily use?',
+        a: 'Yes. Moringa leaf powder can be consumed daily in moderate quantities as part of a balanced diet.'
       },
       {
-        q: 'What are the benefits of moringa powder?',
-        a: 'Moringa powder is traditionally used to support nutrition, immunity, energy levels, and digestion.'
+        q: 'What are the benefits of moringa leaf powder?',
+        a: 'Moringa leaf powder is traditionally used to support nutrition, immunity, energy levels, and digestion.'
       },
       {
-        q: 'How much moringa powder should be consumed daily?',
+        q: 'How much moringa leaf powder should be consumed daily?',
         a: 'Typically, 1–2 teaspoons per day is commonly used.'
       },
       {
-        q: 'What is the best time to consume moringa powder?',
-        a: 'Many people prefer consuming moringa powder in the morning or before meals, but it can be taken anytime.'
+        q: 'What is the best time to consume moringa leaf powder?',
+        a: 'Many people prefer consuming moringa leaf powder in the morning or before meals, but it can be taken anytime.'
       }
     ]
   },
@@ -178,10 +178,10 @@ export default function FAQs() {
         },
         {
           "@type": "Question",
-          "name": "Is moringa powder safe for daily use?",
+          "name": "Is moringa leaf powder safe for daily use?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, moringa powder can be consumed daily in moderate quantities."
+            "text": "Yes, moringa leaf powder can be consumed daily in moderate quantities."
           }
         },
         {

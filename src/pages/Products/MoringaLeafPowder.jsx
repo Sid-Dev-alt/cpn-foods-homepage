@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
 
-export default function MoringaPowder() {
+export default function MoringaLeafPowder() {
   useEffect(() => {
     const script = document.createElement('script');
     script.type = 'application/ld+json';
-    script.id = 'moringa-powder-schema';
+    script.id = 'moringa-leaf-powder-schema';
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": "Moringa Powder",
+      "name": "Moringa Leaf Powder",
       "brand": {
         "@type": "Brand",
         "name": "CPN Foods"
       },
-      "description": "Moringa powder made from dried moringa leaves, traditionally used for nutrition, immunity support and daily wellness.",
+      "description": "Moringa leaf powder made from dried moringa leaves, traditionally used for nutrition, immunity support and daily wellness.",
       "category": "Herbal Products",
       "countryOfOrigin": "IN",
       "manufacturer": {
@@ -24,7 +24,7 @@ export default function MoringaPowder() {
     document.head.appendChild(script);
 
     return () => {
-      const el = document.getElementById('moringa-powder-schema');
+      const el = document.getElementById('moringa-leaf-powder-schema');
       if (el) el.remove();
     };
   }, []);
@@ -34,20 +34,20 @@ export default function MoringaPowder() {
       {/* Header Section */}
       <div className="row mb-5 pb-4 border-bottom">
         <div className="col-12 col-md-8">
-          <h1 className="fw-bold mb-3 display-5">Moringa Powder – Natural Superfood from Indian Moringa Leaves</h1>
+          <h1 className="fw-bold mb-3 display-5">Moringa Leaf Powder – Natural Superfood from Indian Moringa Leaves</h1>
         </div>
       </div>
 
       <div className="row g-5">
         <div className="col-lg-8">
-          {/* What is Moringa Powder? */}
+          {/* What is Moringa Leaf Powder? */}
           <section className="mb-5">
-            <h2 className="fw-bold mb-4">What is Moringa Powder?</h2>
+            <h2 className="fw-bold mb-4">What is Moringa Leaf Powder?</h2>
             <p className="text-muted lh-lg mb-3">
-              Moringa powder is a natural herbal powder made by drying and grinding the leaves of the <strong>Moringa oleifera</strong> plant. Widely known as the “<strong>drumstick tree</strong>”, moringa has been used in traditional Indian diets for centuries due to its <strong>nutritional richness and health-supporting properties</strong>.
+              Moringa Leaf Powder is a natural herbal powder made by drying and grinding the leaves of the <strong>Moringa oleifera</strong> plant. Widely known as the “<strong>drumstick tree</strong>”, moringa has been used in traditional Indian diets for centuries due to its <strong>nutritional richness and health-supporting properties</strong>.
             </p>
             <p className="text-muted lh-lg mb-3">
-              Moringa powder is valued for being:
+              Moringa Leaf Powder is valued for being:
             </p>
             <ul className="text-muted lh-lg mb-4 ms-3">
               <li>100% plant-based</li>
@@ -69,16 +69,16 @@ export default function MoringaPowder() {
               <li>Traditional cultivation practices</li>
             </ul>
             <p className="text-muted lh-lg">
-              India is one of the <strong>largest producers and exporters of moringa powder</strong> worldwide.
+              India is one of the <strong>largest producers and exporters of moringa leaf powder</strong> worldwide.
             </p>
             <hr className="my-5" />
           </section>
 
-          {/* How Moringa Powder is Made */}
+          {/* How Moringa Leaf Powder is Made */}
           <section className="mb-5">
-            <h2 className="fw-bold mb-4">How Moringa Powder is Made</h2>
+            <h2 className="fw-bold mb-4">How Moringa Leaf Powder is Made</h2>
             <p className="text-muted lh-lg mb-3">
-              High-quality moringa powder follows a careful process:
+              High-quality moringa leaf powder follows a careful process:
             </p>
             <ol className="text-muted lh-lg mb-4 ms-3">
               <li>Fresh moringa leaves are harvested</li>
@@ -93,9 +93,9 @@ export default function MoringaPowder() {
             <hr className="my-5" />
           </section>
 
-          {/* Nutritional Profile of Moringa Powder */}
+          {/* Nutritional Profile of Moringa Leaf Powder */}
           <section className="mb-5">
-            <h2 className="fw-bold mb-4">Nutritional Profile of Moringa Powder</h2>
+            <h2 className="fw-bold mb-4">Nutritional Profile of Moringa Leaf Powder</h2>
             <p className="text-muted lh-lg mb-3">Moringa leaf powder is naturally rich in:</p>
             <ul className="text-muted lh-lg mb-4 ms-3">
               <li>Plant protein</li>
@@ -113,8 +113,8 @@ export default function MoringaPowder() {
 
           {/* Health Benefits of Moringa */}
           <section className="mb-5">
-            <h2 className="fw-bold mb-4">Health Benefits of Moringa Powder</h2>
-            <p className="text-muted lh-lg mb-3">When consumed regularly in recommended quantities, moringa powder may help with:
+            <h2 className="fw-bold mb-4">Health Benefits of Moringa Leaf Powder</h2>
+            <p className="text-muted lh-lg mb-3">When consumed regularly in recommended quantities, moringa leaf powder may help with:
             </p>
             <ul className="text-muted lh-lg mb-4 ms-3">
               <li>Supporting immunity
@@ -126,14 +126,14 @@ export default function MoringaPowder() {
             </ul>
             <div className="p-3 bg-light border-start border-4 border-success rounded mb-4">
               <p className="text-muted lh-lg">
-                ⚠️ Note: Moringa powder is a food supplement, not a medicine.
+                ⚠️ Note: Moringa leaf powder is a food supplement, not a medicine.
               </p>
             </div>
           </section>
 
           <section className="mb-5">
-            <h2 className="fw-bold mb-4">How to Consume Moringa Powder</h2>
-            <p className="text-muted lh-lg mb-3">Common ways to use moringa powder include:
+            <h2 className="fw-bold mb-4">How to Consume Moringa Leaf Powder</h2>
+            <p className="text-muted lh-lg mb-3">Common ways to use moringa leaf powder include:
             </p>
             <ul className="text-muted lh-lg mb-4 ms-3">
               <li>Mixing with warm water</li>
@@ -148,17 +148,17 @@ export default function MoringaPowder() {
             <hr className="my-5" />
           </section>
 
-          {/* How to Identify Pure Moringa Powder */}
+          {/* How to Identify Pure Moringa Leaf Powder */}
           <section className="mb-5">
-            <h2 className="fw-bold mb-4">How to Identify Pure Moringa Powder</h2>
-            <p className="text-muted lh-lg mb-3">Pure moringa powder can be identified by:</p>
+            <h2 className="fw-bold mb-4">How to Identify Pure Moringa Leaf Powder</h2>
+            <p className="text-muted lh-lg mb-3">Pure moringa leaf powder can be identified by:</p>
             <ul className="text-muted lh-lg mb-4 ms-3">
               <li>Natural green colour (not dull or brown)</li>
               <li>Mild leafy aroma</li>
               <li>Fine texture</li>
               <li>No artificial flavour or colour</li>
             </ul>
-            <p className="text-muted lh-lg mb-3">Adulterated moringa powder may appear:</p>
+            <p className="text-muted lh-lg mb-3">Adulterated moringa leaf powder may appear:</p>
             <ul className="text-muted lh-lg mb-4 ms-3">
               <li>Greyish or brown</li>
               <li>Odourless</li>
@@ -167,15 +167,15 @@ export default function MoringaPowder() {
             <hr className="my-5" />
           </section>
 
-          {/* Moringa Powder vs Other Herbal Powders */}
+          {/* Moringa Leaf Powder vs Other Herbal Powders */}
           <section className="mb-5">
-            <h2 className="fw-bold mb-4">Moringa Powder vs Other Herbal Powders</h2>
+            <h2 className="fw-bold mb-4">Moringa Leaf Powder vs Other Herbal Powders</h2>
             <div className="table-responsive">
               <table className="table table-bordered text-muted shadow-sm">
                 <thead className="bg-light">
                   <tr>
                     <th className="fw-bold">Feature</th>
-                    <th className="fw-bold">Moringa Powder</th>
+                    <th className="fw-bold">Moringa Leaf Powder</th>
                     <th className="fw-bold">Wheatgrass Powder</th>
                     <th className="fw-bold">Spirulina</th>
                   </tr>
@@ -214,9 +214,9 @@ export default function MoringaPowder() {
 
           {/* CPN Foods Quality Section */}
           <section className="mb-5">
-            <h2 className="fw-bold mb-4">CPN Foods Moringa Powder – Quality You Can Trust</h2>
+            <h2 className="fw-bold mb-4">CPN Foods Moringa Leaf Powder – Quality You Can Trust</h2>
             <p className="text-muted lh-lg mb-3">
-              At <strong>CPN Foods</strong>, our moringa powder is produced using carefully selected leaves and hygienic processing methods to ensure:
+              At <strong>CPN Foods</strong>, our moringa leaf powder is produced using carefully selected leaves and hygienic processing methods to ensure:
             </p>
             <ul className="text-muted lh-lg mb-4 ms-3">
               <li>Natural green colour</li>
@@ -232,10 +232,10 @@ export default function MoringaPowder() {
           <hr className="my-5" />
 
           {/* Packaging & Supply Options Section */}
-          <section className="mb-5">
+          {/* <section className="mb-5">
             <h2 className="fw-bold mb-4">Packaging & Supply Options</h2>
             <p className="text-muted lh-lg mb-3">
-              CPN Foods moringa powder is available in:
+              CPN Foods moringa leaf powder is available in:
             </p>
             <ul className="text-muted lh-lg mb-4 ms-3">
               <li>Retail packs</li>
@@ -246,15 +246,15 @@ export default function MoringaPowder() {
             <p className="text-muted lh-lg mb-0 text-success fw-bold">
               Custom packing options are available on request.
             </p>
-          </section>
+          </section> */}
         </div>
 
         {/* Sidebar / Additional Info */}
         <div className="col-lg-4">
           <div className="mb-4">
-            <img 
-              src="https://placehold.co/600x400" 
-              alt="" 
+            <img
+              src="https://placehold.co/600x400"
+              alt=""
               className="img-fluid rounded shadow-sm"
             />
           </div>

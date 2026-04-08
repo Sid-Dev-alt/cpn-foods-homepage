@@ -181,7 +181,7 @@ export default function HaldiPowder() {
           </section>
 
           {/* Packaging & Supply Options */}
-          <section className="mb-5">
+          {/* <section className="mb-5">
             <h2 className="fw-bold mb-4">Packaging & Supply Options</h2>
             <p className="text-muted lh-lg mb-4">We offer a variety of packaging formats to meet diverse needs:</p>
             <ul className="text-muted lh-lg mb-4 ms-3">
@@ -193,7 +193,7 @@ export default function HaldiPowder() {
             <p className="text-muted lh-lg mb-0 text-success fw-bold">
               Custom packaging available on request.
             </p>
-          </section>
+          </section> */}
         </div>
 
         {/* Sidebar / Additional Info */}

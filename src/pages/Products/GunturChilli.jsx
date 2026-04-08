@@ -222,7 +222,7 @@ export default function GunturChilli() {
           </section>
 
           {/* Forms Available */}
-          <section className="mb-5">
+          {/* <section className="mb-5">
             <h2 className="fw-bold mb-4">Forms Available at CPN Foods</h2>
             <ul className="text-muted lh-lg mb-4 ms-3">
               <li>Whole dry Guntur chillies</li>
@@ -237,7 +237,7 @@ export default function GunturChilli() {
               <li>Institutional buyers</li>
               <li>Export requirements</li>
             </ul>
-          </section>
+          </section> */}
         </div>
 
         {/* Sidebar / Additional Info */}

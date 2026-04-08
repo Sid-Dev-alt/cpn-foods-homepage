@@ -128,7 +128,7 @@ function ProductCard({ product }) {
   );
 }
 
-function MasalasPage() {
+function Shop() {
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState('');
   const [sweet, setSweet] = useState(5);
@@ -146,7 +146,7 @@ function MasalasPage() {
   const [error, setError] = useState(null);
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
 
-  const fetchMasalas = async () => {
+  const fetchProducts = async () => {
     try {
       setIsLoading(true);
       setError(null);
@@ -161,7 +161,7 @@ function MasalasPage() {
       const res = await axios.get(`${API_URL}/api/v1/masalas${query}`);
       setProducts(res.data);
     } catch (error) {
-      console.error("Error fetching masalas:", error);
+      console.error("Error fetching products:", error);
       setError("Failed to fetch products. The backend might be waking up or there is a network error.");
     } finally {
       setIsLoading(false);
@@ -170,7 +170,7 @@ function MasalasPage() {
 
   useEffect(() => {
     const handler = setTimeout(() => {
-      fetchMasalas();
+      fetchProducts();
     }, 500);
 
     return () => {
@@ -183,11 +183,11 @@ function MasalasPage() {
   };
 
   return (
-    <div className="masala-page-wrapper" style={{ minHeight: '100vh', backgroundColor: '#fffcf6' }}>
+    <div className="shop-page-wrapper" style={{ minHeight: '100vh', backgroundColor: '#fffcf6' }}>
 
       {/* Brown Header */}
       <div className="w-100 d-flex align-items-center px-4 px-lg-5" style={{ backgroundColor: '#EA0000', height: '140px' }}>
-        <h1 className="text-white fw-bold display-4 m-0" style={{ letterSpacing: '-1px' }}>Masalas</h1>
+        <h1 className="text-white fw-bold display-4 m-0" style={{ letterSpacing: '-1px' }}>Shop</h1>
       </div>
 
       <div className="container-fluid px-4 px-lg-5 py-4 py-lg-5">
@@ -198,7 +198,7 @@ function MasalasPage() {
             className="btn btn-outline-dark w-100 fw-bold d-flex align-items-center justify-content-center gap-2"
             onClick={() => setIsMobileFiltersOpen(!isMobileFiltersOpen)}
           >
-            <BiSearch /> {isMobileFiltersOpen ? 'HIDE FILTERS' : 'FILTER & SEARCH MASALAS'}
+            <BiSearch /> {isMobileFiltersOpen ? 'HIDE FILTERS' : 'FILTER & SEARCH PRODUCTS'}
           </button>
         </div>
 
@@ -208,7 +208,7 @@ function MasalasPage() {
           <div className={`col-lg-3 pe-lg-5 mb-5 mb-lg-0 ${isMobileFiltersOpen ? 'd-block' : 'd-none d-lg-block'}`}>
             {/* Search */}
             <div className="mb-5">
-              <h6 className="fw-bold text-dark mb-3" style={{ fontSize: '0.8rem', letterSpacing: '0.5px' }}>SEARCH WITHIN MASALAS</h6>
+              <h6 className="fw-bold text-dark mb-3" style={{ fontSize: '0.8rem', letterSpacing: '0.5px' }}>SEARCH WITHIN PRODUCTS</h6>
               <div className="position-relative">
                 <input
                   type="text"
@@ -296,13 +296,13 @@ function MasalasPage() {
             {error && !isLoading && (
               <div className="alert alert-danger d-flex align-items-center justify-content-between" role="alert">
                 <span>{error}</span>
-                <button className="btn btn-danger btn-sm" onClick={() => { setIsLoading(true); fetchMasalas(); }}>Retry</button>
+                <button className="btn btn-danger btn-sm" onClick={() => { setIsLoading(true); fetchProducts(); }}>Retry</button>
               </div>
             )}
 
             {!isLoading && !error && products.length === 0 && (
               <div className="text-center py-5">
-                <p className="text-muted">No masalas found matching your filters.</p>
+                <p className="text-muted">No products found matching your filters.</p>
                 <button className="btn btn-outline-danger mt-2" onClick={() => {
                   setSearch('');
                   setSweet(5); setSour(5); setTangy(5); setSpice(5);
@@ -326,4 +326,4 @@ function MasalasPage() {
   );
 }
 
-export default MasalasPage;
+export default Shop;

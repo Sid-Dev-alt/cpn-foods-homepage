@@ -30,9 +30,9 @@ function CartPage() {
             🛒
           </div>
           <h2 className="fw-bold mb-3">Your cart is empty</h2>
-          <p className="text-muted mb-5">Looks like you haven't added any masalas yet.</p>
-          <Link to="/masalas" className="btn btn-danger rounded-pill px-5 py-3 fw-bold shadow-sm">
-            BROWSE MASALAS
+          <p className="text-muted mb-5">Looks like you haven't added any products yet.</p>
+          <Link to="/shop" className="btn btn-danger rounded-pill px-5 py-3 fw-bold shadow-sm">
+            BROWSE SHOP
           </Link>
         </motion.div>
       </div>
@@ -114,7 +114,7 @@ function CartPage() {
               ))}
             </AnimatePresence>
 
-            <Link to="/masalas" className="btn btn-outline-dark rounded-pill mt-4 px-4 py-2 small fw-bold d-inline-flex align-items-center gap-2">
+            <Link to="/shop" className="btn btn-outline-dark rounded-pill mt-4 px-4 py-2 small fw-bold d-inline-flex align-items-center gap-2">
               <BiArrowBack /> CONTINUE SHOPPING
             </Link>
           </div>
