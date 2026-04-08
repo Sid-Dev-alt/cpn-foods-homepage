@@ -243,11 +243,11 @@ export default function FAQs() {
 
       {/* Footer Info */}
       <div className="mt-5 pt-5 text-center">
-        <div className="p-4 bg-light rounded-4 d-inline-block border">
+        {/* <div className="p-4 bg-light rounded-4 d-inline-block border">
           <p className="mb-0 text-muted">
             Still have questions? <a href="/contact" className="text-danger fw-bold text-decoration-none border-bottom border-danger">Contact our support team</a>
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

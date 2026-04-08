@@ -60,7 +60,6 @@ function Header() {
                 </AnimatePresence>
               </li>
               <li className="mx-3"><Link to="/shop" className="text-decoration-none text-dark hover-red">SHOP</Link></li>
-              <li className="mx-3"><Link to="/about-us" className="text-decoration-none text-dark hover-red">ABOUT</Link></li>
               <li className="mx-3"><Link to="/faqs" className="text-decoration-none text-dark hover-red">FAQs</Link></li>
             </ul>
           </nav>
@@ -140,7 +139,6 @@ function Header() {
                   </div>
                 </li>
                 <li><Link to="/shop" className="text-decoration-none text-dark d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>SHOP</Link></li>
-                <li><Link to="/about-us" className="text-decoration-none text-dark d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>ABOUT</Link></li>
                 <li><Link to="/faqs" className="text-decoration-none text-dark d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>FAQs</Link></li>
                 <li className="pt-2 border-top">
                   {user ? (
