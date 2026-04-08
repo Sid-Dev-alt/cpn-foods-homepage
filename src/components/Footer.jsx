@@ -30,9 +30,9 @@ export default function Footer() {
           <div className="col-lg-2 col-md-6">
             <h6 className="fw-bold text-uppercase mb-4" style={{ fontSize: '0.85rem', letterSpacing: '1px' }}>Quick Links</h6>
             <ul className="list-unstyled d-flex flex-column gap-2 mb-0">
-              <li><Link to="/" className="text-decoration-none text-muted small hover-red">Home</Link></li>
-              <li><Link to="/products" className="text-decoration-none text-muted small hover-red">Products</Link></li>
-              <li><Link to="/shop" className="text-decoration-none text-muted small hover-red">Shop</Link></li>
+              {/* <li><Link to="/" className="text-decoration-none text-muted small hover-red">Home</Link></li> */}
+              {/* <li><Link to="/products" className="text-decoration-none text-muted small hover-red">Products</Link></li> */}
+              {/* <li><Link to="/shop" className="text-decoration-none text-muted small hover-red">Shop</Link></li> */}
               <li><Link to="/about-us" className="text-decoration-none text-muted small hover-red">About Us</Link></li>
             </ul>
           </div>
