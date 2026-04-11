@@ -38,7 +38,7 @@ function Hero() {
               </h2>
 
               <div className="d-flex align-items-center mb-4 text-dark">
-                <img src={cpnLogoWhite} alt="CPN Foods" style={{ height: '40px' }} className="me-3" />
+                {/* <img src={cpnLogoWhite} alt="CPN Foods" style={{ height: '40px' }} className="me-3" /> */}
                 <h3 className="fw-bold m-0 fs-2 text-dark">Since 1943.</h3>
               </div>
 

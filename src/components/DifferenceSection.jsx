@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import cpnLogoRed from '../img/cpn_logo_red.png';
 import sec2Img from '../img/sec2.png';
 
 function DifferenceSection() {

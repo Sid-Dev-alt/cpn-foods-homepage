@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import cpnLogoRed from '../img/cpn_logo_red.png';
+import cpnLogo from '../../cpn-logo.png';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 export default function Footer() {
@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Brand & Description */}
           <div className="col-lg-4 col-md-6">
             <Link to="/" className="d-inline-block mb-4">
-              <img src={cpnLogoRed} alt="CPN Foods" style={{ height: '35px' }} />
+              <img src={cpnLogo} alt="CPN Foods" style={{ height: '45px' }} />
             </Link>
             <p className="text-muted small lh-lg pe-lg-5 mb-4">
               

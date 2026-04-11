@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import cpnLogoRed from '../img/cpn_logo_red.png';
+import cpnLogo from '../../cpn-logo.png';
 import { BiSearch, BiCart, BiUser } from 'react-icons/bi';
 import { HiOutlineMenuAlt4, HiX } from 'react-icons/hi';
 import { BiChevronDown } from 'react-icons/bi';
@@ -21,7 +21,7 @@ function Header() {
 
           {/* Logo */}
           <Link to="/" className="logo-container">
-            <img src={cpnLogoRed} alt="CPN Foods" style={{ height: '40px' }} />
+            <img src={cpnLogo} alt="CPN Foods" style={{ height: '55px' }} />
           </Link>
 
           {/* Navigation Links */}
@@ -79,7 +79,7 @@ function Header() {
             </Link>
 
             {/* Auth Section */}
-            {/* {user ? (
+            {user ? (
               <div className="dropdown">
                 <button className="btn p-0 border-0 d-flex align-items-center" id="userDropdown" data-bs-toggle="dropdown">
                   <img src={user.photoURL} alt={user.displayName} className="rounded-circle" style={{ width: '32px', height: '32px', objectFit: 'cover' }} />
@@ -100,7 +100,7 @@ function Header() {
               >
                 <BiUser /> LOGIN
               </button>
-            )} */}
+            )}
 
             <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="btn btn-link text-dark hover-red ms-4 fs-3 p-0 d-lg-none" style={{ textDecoration: 'none' }}>
               {isMobileMenuOpen ? <HiX /> : <HiOutlineMenuAlt4 />}
