@@ -207,7 +207,7 @@ export default function FAQs() {
       {/* Header Section */}
       <div className="text-center mb-5 pb-4 border-bottom">
         <h6 className="text-danger text-uppercase fw-bold ls-2 mb-2">Help Center</h6>
-        <h1 className="display-4 fw-bold mb-3">COMMON FAQ PAGE – CPN FOODS</h1>
+        <h1 className="display-4 fw-bold mb-3">COMMON FAQ</h1>
         <p className="text-muted lead mx-auto" style={{ maxWidth: '700px' }}>
           Find answers to frequently asked questions about our spices, superfoods, and natural sweeteners.
         </p>

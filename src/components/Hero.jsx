@@ -49,20 +49,20 @@ function Hero() {
               <div className="row mb-5 text-dark fw-bold fs-5">
                 <div className="col-6 mb-3 d-flex align-items-center">
                   <div className="bg-white rounded-circle me-2 shadow-sm" style={{ width: '10px', height: '10px' }}></div>
-                  Lab Tested
+                  Farmer Direct Sourcing
                 </div>
                 <div className="col-6 mb-3 d-flex align-items-center">
                   <div className="bg-white rounded-circle me-2 shadow-sm" style={{ width: '10px', height: '10px' }}></div>
                   No Artificial Enhancers
                 </div>
-                <div className="col-6 d-flex align-items-center">
+                {/* <div className="col-6 d-flex align-items-center">
                   <div className="bg-white rounded-circle me-2 shadow-sm" style={{ width: '10px', height: '10px' }}></div>
                   Farmer Direct Sourcing
                 </div>
                 <div className="col-6 d-flex align-items-center">
                   <div className="bg-white rounded-circle me-2 shadow-sm" style={{ width: '10px', height: '10px' }}></div>
                   Batch Traceable
-                </div>
+                </div> */}
               </div>
 
               <div className="d-flex flex-wrap gap-4">
@@ -71,11 +71,11 @@ function Hero() {
                   style={{ boxShadow: '0 8px 15px rgba(0,0,0,0.2)', fontSize: '1.1rem' }}>
                   Shop Pure Spices Now
                 </button>
-                <button
+                {/* <button
                   className="btn bg-white text-danger fw-bold rounded-0 px-4 py-2 border-0"
                   style={{ boxShadow: '0 8px 15px rgba(0,0,0,0.2)', fontSize: '1.1rem' }}>
                   Verify Our Purity
-                </button>
+                </button> */}
               </div>
 
             </div>

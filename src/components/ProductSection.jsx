@@ -1,5 +1,6 @@
 import React from 'react';
 import sec3Img from '../img/sec3.jpg';
+import { Link } from 'react-router-dom';
 
 function ProductSection() {
   return (
@@ -58,8 +59,9 @@ function ProductSection() {
                   chilli makes.<span style={{ color: '#FF0000', fontSize: '1.3em', verticalAlign: '-0.1em', marginLeft: '4px' }}>”</span>
                 </h3>
                 <div className="d-flex gap-4 mt-5 justify-content-center justify-content-md-start">
-                  <button className="btn rounded-0 text-white fw-medium fs-6 px-4 py-2" style={{ backgroundColor: '#FF0000', boxShadow: '0px 8px 15px rgba(255, 0, 0, 0.3)' }}>Buy Now</button>
-                  <button className="btn rounded-0 text-white fw-medium fs-6 px-4 py-2" style={{ backgroundColor: '#FF0000', boxShadow: '0px 8px 15px rgba(255, 0, 0, 0.3)' }}>View Lab Report</button>
+                  <Link to="/shop">
+                  <button className="btn rounded-0 text-white fw-medium fs-6 px-4 py-2" style={{ backgroundColor: '#FF0000', boxShadow: '0px 8px 15px rgba(255, 0, 0, 0.3)' }}>Buy Now</button> </Link>
+                  {/* <button className="btn rounded-0 text-white fw-medium fs-6 px-4 py-2" style={{ backgroundColor: '#FF0000', boxShadow: '0px 8px 15px rgba(255, 0, 0, 0.3)' }}>View Lab Report</button> */}
                 </div>
               </div>
 

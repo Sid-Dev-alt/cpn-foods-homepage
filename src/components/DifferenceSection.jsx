@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import cpnLogoRed from '../img/cpn_logo_red.png';
 import sec2Img from '../img/sec2.png';
 
@@ -23,12 +24,12 @@ function DifferenceSection() {
               heart of agricultural markets - grading, evaluating, and
               sourcing produce at the mandi level.
             </p>
-
+{/* 
             <div className="mt-5 border-start border-danger border-4 ps-3">
               <p className="text-danger fw-bold mb-1" style={{ letterSpacing: '0.2px' }}>We know how quality looks.</p>
               <p className="text-danger fw-bold mb-1" style={{ letterSpacing: '0.2px' }}>We know how adulteration happens.</p>
               <p className="text-danger fw-bold mb-0" style={{ letterSpacing: '0.2px' }}>And we refuse it.</p>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Columns Container: Quote and Image */}
@@ -43,9 +44,11 @@ function DifferenceSection() {
                   every pack.<span style={{ color: '#FF0000', fontSize: '1.3em', verticalAlign: '-0.1em', marginLeft: '2px' }}>”</span>
                 </h3>
                 <div className="mt-5">
-                  <button className="btn rounded-0 text-white fw-bold fs-6 px-4 py-2" style={{ backgroundColor: '#FF0000', boxShadow: '0px 10px 20px rgba(255, 0, 0, 0.3)' }}>
-                    Explore Our Collection
-                  </button>
+                  <Link to="/products">
+                    <button className="btn rounded-0 text-white fw-bold fs-6 px-4 py-2" style={{ backgroundColor: '#FF0000', boxShadow: '0px 10px 20px rgba(255, 0, 0, 0.3)' }}>
+                      Explore Our Collection
+                    </button>
+                  </Link>
                 </div>
               </div>
 

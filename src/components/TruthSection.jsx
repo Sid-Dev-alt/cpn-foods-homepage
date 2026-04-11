@@ -12,7 +12,7 @@ function TruthSection() {
           <div className="col-md-6 pe-md-5 mb-5 mb-md-0">
             <h2 className="display-6 fw-bold mb-4">
               The <span className="text-white px-2 py-1 d-inline-block" style={{ backgroundColor: '#FF0000' }}>Truth</span> about<br />
-              Most Chilli Powder
+              Adulterated Chilli Powder
             </h2>
             <p className="text-danger fw-bold mb-3 small text-uppercase letter-spacing-1">Many brands:</p>
             <ul className="list-unstyled mb-4">

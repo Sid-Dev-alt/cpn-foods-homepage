@@ -193,20 +193,19 @@ function Shop() {
       <div className="container-fluid px-4 px-lg-5 py-4 py-lg-5">
         
         {/* Mobile Filter Toggle */}
-        <div className="d-lg-none mb-4">
+        {/* <div className="d-lg-none mb-4">
           <button 
             className="btn btn-outline-dark w-100 fw-bold d-flex align-items-center justify-content-center gap-2"
             onClick={() => setIsMobileFiltersOpen(!isMobileFiltersOpen)}
           >
             <BiSearch /> {isMobileFiltersOpen ? 'HIDE FILTERS' : 'FILTER & SEARCH PRODUCTS'}
           </button>
-        </div>
+        </div> */}
 
         <div className="row">
 
           {/* LEFT SIDEBAR */}
-          <div className={`col-lg-3 pe-lg-5 mb-5 mb-lg-0 ${isMobileFiltersOpen ? 'd-block' : 'd-none d-lg-block'}`}>
-            {/* Search */}
+          {/* <div className={`col-lg-3 pe-lg-5 mb-5 mb-lg-0 ${isMobileFiltersOpen ? 'd-block' : 'd-none d-lg-block'}`}>
             <div className="mb-5">
               <h6 className="fw-bold text-dark mb-3" style={{ fontSize: '0.8rem', letterSpacing: '0.5px' }}>SEARCH WITHIN PRODUCTS</h6>
               <div className="position-relative">
@@ -220,7 +219,6 @@ function Shop() {
               </div>
             </div>
 
-            {/* Filter by Taste */}
             <div className="mb-5">
               <div className="d-flex justify-content-between align-items-center mb-4">
                 <h6 className="fw-bold text-dark m-0" style={{ fontSize: '0.8rem', letterSpacing: '0.5px' }}>FILTER BY TASTE</h6>
@@ -256,7 +254,6 @@ function Shop() {
               </div>
             </div>
 
-            {/* Ideal With */}
             <div>
               <div className="d-flex justify-content-between align-items-center mb-4">
                 <h6 className="fw-bold text-dark m-0" style={{ fontSize: '0.8rem', letterSpacing: '0.5px' }}>IDEAL WITH</h6>
@@ -278,10 +275,10 @@ function Shop() {
               </div>
 
             </div>
-          </div>
+          </div> */}
 
           {/* MAIN LISTINGS */}
-          <div className="col-lg-9">
+          <div className="col-12">
             <p className="text-muted small mb-4">SHOWING {products.length} OF {products.length} RESULTS</p>
 
             {isLoading && (

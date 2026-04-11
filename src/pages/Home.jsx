@@ -18,7 +18,7 @@ function Home() {
       <DifferenceSection />
       <ProductSection />
       <TrustedSection />
-      <ScanProofSection />
+      {/* <ScanProofSection /> */}
       <StandBehindSection />
       <ExperienceSection />
       <ReliableSupplySection />
