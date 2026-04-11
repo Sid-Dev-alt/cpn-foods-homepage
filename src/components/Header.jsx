@@ -78,8 +78,7 @@ function Header() {
               )}
             </Link>
 
-            {/* Auth Section */}
-            {user ? (
+            {user && (
               <div className="dropdown">
                 <button className="btn p-0 border-0 d-flex align-items-center" id="userDropdown" data-bs-toggle="dropdown">
                   <img src={user.photoURL} alt={user.displayName} className="rounded-circle" style={{ width: '32px', height: '32px', objectFit: 'cover' }} />
@@ -92,14 +91,6 @@ function Header() {
                   <li><button className="dropdown-item text-danger small py-2 rounded" onClick={logout}>Logout</button></li>
                 </ul>
               </div>
-            ) : (
-              <button
-                onClick={loginWithGoogle}
-                className="btn btn-outline-dark d-flex align-items-center gap-2 rounded-pill px-3 py-1 fw-bold"
-                style={{ fontSize: '0.8rem' }}
-              >
-                <BiUser /> LOGIN
-              </button>
             )}
 
             <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="btn btn-link text-dark hover-red ms-4 fs-3 p-0 d-lg-none" style={{ textDecoration: 'none' }}>
@@ -140,15 +131,11 @@ function Header() {
                 </li>
                 <li><Link to="/shop" className="text-decoration-none text-dark d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>SHOP</Link></li>
                 <li><Link to="/faqs" className="text-decoration-none text-dark d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>FAQs</Link></li>
-                <li className="pt-2 border-top">
-                  {user ? (
+                {user && (
+                  <li className="pt-2 border-top">
                     <button className="btn btn-outline-danger w-100" onClick={() => { logout(); setIsMobileMenuOpen(false); }}>Logout All Devices</button>
-                  ) : (
-                    <button onClick={() => { loginWithGoogle(); setIsMobileMenuOpen(false); }} className="btn btn-dark w-100 d-flex align-items-center justify-content-center gap-2 py-2">
-                      <BiUser /> LOGIN / REGISTER
-                    </button>
-                  )}
-                </li>
+                  </li>
+                )}
               </ul>
             </div>
           </motion.div>

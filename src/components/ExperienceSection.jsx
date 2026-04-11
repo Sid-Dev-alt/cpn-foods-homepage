@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 function ExperienceSection() {
   return (
     <section className="experience-section py-5 bg-white border-top border-light">
@@ -34,7 +34,8 @@ function ExperienceSection() {
                   </h3>
                </div>
                <div className="mt-2 ps-4 text-start w-100">
-                 <button className="btn rounded-0 text-white fw-bold fs-6 px-4 py-2" style={{ backgroundColor: '#FF0000', boxShadow: '0px 10px 20px rgba(255, 0, 0, 0.3)' }}>Shop Now</button>
+                <Link to='/shop'>
+                 <button className="btn rounded-0 text-white fw-bold fs-6 px-4 py-2" style={{ backgroundColor: '#FF0000', boxShadow: '0px 10px 20px rgba(255, 0, 0, 0.3)' }}>Shop Now</button></Link>
                </div>
              </div>
           </div>
