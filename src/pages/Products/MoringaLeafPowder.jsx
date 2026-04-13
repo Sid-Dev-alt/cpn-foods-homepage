@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import moringaLeafImg from '../../img/moringa_leaf_powder.webp';
 
 export default function MoringaLeafPowder() {
   useEffect(() => {
@@ -252,9 +253,9 @@ export default function MoringaLeafPowder() {
         {/* Sidebar / Additional Info */}
         <div className="col-lg-4">
           <div className="mb-4">
-            <img
-              src="https://placehold.co/600x400"
-              alt=""
+            <img 
+              src={moringaLeafImg} 
+              alt="Moringa Powder" 
               className="img-fluid rounded shadow-sm"
             />
           </div>

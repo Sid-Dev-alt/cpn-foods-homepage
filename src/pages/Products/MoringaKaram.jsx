@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import moringaKaramImg from '../../img/moringa_karam_podi.jpg';
 
 export default function MoringaKaram() {
   useEffect(() => {
@@ -157,7 +158,7 @@ export default function MoringaKaram() {
         <div className="col-lg-4">
           <div className="mb-4">
             <img
-              src="https://placehold.co/600x400"
+              src={moringaKaramImg}
               alt="Moringa Karam Poodi"
               className="img-fluid rounded shadow-sm"
             />

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import haldiPowderImg from '../../img/haldi_powder.webp';
 
 export default function HaldiPowder() {
   useEffect(() => {
@@ -200,7 +201,7 @@ export default function HaldiPowder() {
         <div className="col-lg-4">
           <div className="mb-4">
             <img 
-              src="https://placehold.co/600x400" 
+              src={haldiPowderImg} 
               alt="Turmeric Powder" 
               className="img-fluid rounded shadow-sm"
             />

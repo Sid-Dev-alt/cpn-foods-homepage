@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import chilliPowderImg from '../../img/chilli_powder.webp';
 
 export default function ChilliPowder() {
   useEffect(() => {
@@ -249,8 +250,8 @@ export default function ChilliPowder() {
         <div className="col-lg-4">
           <div className="mb-4">
             <img 
-              src="https://placehold.co/600x400" 
-              alt="" 
+              src={chilliPowderImg} 
+              alt="Chilli Powder" 
               className="img-fluid rounded shadow-sm"
             />
           </div>

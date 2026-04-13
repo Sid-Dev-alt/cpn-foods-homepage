@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import curryPowderImg from '../../img/sec7.png';
 
 export default function CurryPowder() {
   useEffect(() => {
@@ -8,7 +9,7 @@ export default function CurryPowder() {
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": "Curry Powder (Kurra Karam)",
+      "name": "Curry Powder (Kura Karam)",
       "brand": {
         "@type": "Brand",
         "name": "CPN Foods"
@@ -34,7 +35,7 @@ export default function CurryPowder() {
       {/* Header Section */}
       <div className="row mb-5 pb-4 border-bottom">
         <div className="col-12 col-md-8">
-          <h6 className="text-danger fw-bold text-uppercase mb-2">Curry Powder (Kurra Karam)</h6>
+          <h6 className="text-danger fw-bold text-uppercase mb-2">Curry Powder (Kura Karam)</h6>
           <h1 className="fw-bold mb-3 display-5">Because great curry shouldn’t be complicated.</h1>
         </div>
       </div>
@@ -43,7 +44,7 @@ export default function CurryPowder() {
         <div className="col-lg-8">
           {/* Introduction */}
           <section className="mb-5">
-            <h2 className="fw-bold mb-4">Introducing Curry Powder (Kurra Karam)</h2>
+            <h2 className="fw-bold mb-4">Introducing Curry Powder (Kura Karam)</h2>
             <p className="text-muted lh-lg mb-3">
               In today’s busy life, cooking a delicious curry often means using 5–8 different spices, getting the proportions right, and spending time grinding and mixing.
             </p>
@@ -51,14 +52,14 @@ export default function CurryPowder() {
               Not anymore.
             </p>
             <p className="text-muted lh-lg mb-3">
-              <strong>Curry Powder (Kurra Karam)</strong> is your complete curry solution. A powerful blend of <strong>14 carefully selected spices</strong>, crafted to give your curry the perfect balance of taste, aroma, and spice.
+              <strong>Curry Powder (Kura Karam)</strong> is your complete curry solution. A powerful blend of <strong>14 carefully selected spices</strong>, crafted to give your curry the perfect balance of taste, aroma, and spice.
             </p>
             <hr className="my-5" />
           </section>
 
-          {/* Why Choose Curry Powder (Kurra Karam)? */}
+          {/* Why Choose Curry Powder (Kura Karam)? */}
           <section className="mb-5">
-            <h2 className="fw-bold mb-4">Why Choose Curry Powder (Kurra Karam)?</h2>
+            <h2 className="fw-bold mb-4">Why Choose Curry Powder (Kura Karam)?</h2>
             
             <div className="mb-4">
               <h5 className="fw-bold text-danger">✅ No More Multiple Masalas</h5>
@@ -124,7 +125,7 @@ export default function CurryPowder() {
               <div className="col-md-4">
                 <div className="p-4 bg-light rounded-4 h-100">
                   <div className="h1 text-danger mb-3">2</div>
-                  <p className="mb-0">Add 2 spoons of Curry Powder (Kurra Karam)</p>
+                  <p className="mb-0">Add 2 spoons of Curry Powder (Kura Karam)</p>
                 </div>
               </div>
               <div className="col-md-4">
@@ -148,7 +149,7 @@ export default function CurryPowder() {
               <li>Looking for consistent taste</li>
             </ul>
             <p className="text-muted lh-lg">
-              Curry Powder (Kurra Karam) makes cooking simple and satisfying.
+              Curry Powder (Kura Karam) makes cooking simple and satisfying.
             </p>
           </section>
 
@@ -168,7 +169,7 @@ export default function CurryPowder() {
           <div className="mb-4">
             <img
               src="https://placehold.co/600x400"
-              alt="Curry Powder (Kurra Karam)"
+              alt="Curry Powder (Kura Karam)"
               className="img-fluid rounded shadow-sm"
             />
           </div>
@@ -176,7 +177,7 @@ export default function CurryPowder() {
             <h4 className="fw-bold mb-3">Quick Facts</h4>
             <div className="mb-3">
               <span className="d-block text-muted small text-uppercase">Product</span>
-              <span className="fw-bold">Curry Powder (Kurra Karam)</span>
+              <span className="fw-bold">Curry Powder (Kura Karam)</span>
             </div>
             <div className="mb-3">
               <span className="d-block text-muted small text-uppercase">Spices Count</span>

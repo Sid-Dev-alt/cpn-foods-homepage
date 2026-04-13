@@ -1,5 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import gunturChilliImg from '../../img/guntur_chilli.jpg';
+import chilliPowderImg from '../../img/chilli_powder.webp';
+import haldiPowderImg from '../../img/haldi_powder.webp';
+import jaggeryImg from '../../img/jaggery_block.webp';
+import moringaLeafImg from '../../img/moringa_leaf_powder.webp';
+import moringaKaramImg from '../../img/moringa_karam_podi.jpg';
+import kuraKaramImg from '../../img/sec7.png';
+
 
 const products = [
   {
@@ -7,7 +15,7 @@ const products = [
     name: 'Guntur Chilli',
     category: 'Spices',
     path: '/products/spices/guntur-chilli',
-    image: 'https://placehold.co/600x400',
+    image: gunturChilliImg,
     description: 'India’s hottest and most trusted red chilli, known for its deep pungency.'
   },
   {
@@ -15,7 +23,7 @@ const products = [
     name: 'Chilli Powder',
     category: 'Spices',
     path: '/products/spices/chilli-powder',
-    image: 'https://placehold.co/600x400',
+    image: chilliPowderImg,
     description: 'Pure, authentic, and essential Indian spice for heat and flavour.'
   },
   {
@@ -23,7 +31,7 @@ const products = [
     name: 'Haldi Powder',
     category: 'Spices',
     path: '/products/spices/haldi-powder',
-    image: 'https://placehold.co/600x400',
+    image: haldiPowderImg,
     description: 'Pure Indian turmeric powder known for its rich colour, strong aroma, and curcumin content.'
   },
   {
@@ -31,7 +39,7 @@ const products = [
     name: 'Jaggery',
     category: 'Natural Sweeteners',
     path: '/products/natural-sweeteners/jaggery',
-    image: 'https://placehold.co/600x400',
+    image: jaggeryImg,
     description: 'A traditional natural sweetener made from concentrated sugarcane juice, rich in minerals.'
   },
   {
@@ -39,7 +47,7 @@ const products = [
     name: 'Moringa Leaf Powder',
     category: 'Superfoods',
     path: '/products/superfoods/moringa-leaf-powder',
-    image: 'https://placehold.co/600x400',
+    image: moringaLeafImg,
     description: 'A natural superfood from Indian Moringa leaves, rich in nutrients.'
   },
   {
@@ -47,15 +55,15 @@ const products = [
     name: 'Moringa Karam Poodi',
     category: 'Spices & Podis',
     path: '/products/spices/moringa-karam-poodi',
-    image: 'https://placehold.co/600x400',
+    image: moringaKaramImg,
     description: 'Authentic Andhra style Moringa Kaaram Podi, blending health and tradition.'
   },
   {
     id: 7,
-    name: 'Curry Powder (Kurra Karam)',
+    name: 'Curry Powder (Kura Karam)',
     category: 'Spices & Podis',
     path: '/products/spices/kura-karam',
-    image: 'https://placehold.co/600x400',
+    image: "https://placehold.co/600x400",
     description: 'A powerful blend of 14 carefully selected spices, your complete curry solution.'
   }
 ];

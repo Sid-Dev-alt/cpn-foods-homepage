@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import jaggeryImg from '../../img/jaggery_block.webp';
 
 export default function Jaggery() {
   useEffect(() => {
@@ -219,8 +220,8 @@ export default function Jaggery() {
         <div className="col-lg-4">
           <div className="mb-4">
             <img 
-              src="https://placehold.co/600x400" 
-              alt="Jaggery" 
+              src={jaggeryImg} 
+              alt="Jaggery Block" 
               className="img-fluid rounded shadow-sm"
             />
           </div>

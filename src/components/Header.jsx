@@ -53,7 +53,7 @@ function Header() {
                       <Link to="/jaggery-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Jaggery Powder</Link>
                       <Link to="/products/superfoods/moringa-leaf-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Moringa Leaf Powder</Link>
                       <Link to="/products/spices/moringa-karam-poodi" className="dropdown-item py-2 fw-medium text-dark hover-red">Moringa Karam Poodi</Link>
-                      <Link to="/products/spices/kura-karam" className="dropdown-item py-2 fw-medium text-dark hover-red">Curry Powder (Kurra Karam)</Link>
+                      <Link to="/products/spices/kura-karam" className="dropdown-item py-2 fw-medium text-dark hover-red">Curry Powder (Kura Karam)</Link>
                       <Link to="/products" className="dropdown-item py-2 fw-medium text-dark hover-red border-top border-light">All Products</Link>
                     </motion.div>
                   )}
@@ -124,7 +124,7 @@ function Header() {
                       <li><Link to="/jaggery-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Jaggery Powder</Link></li>
                       <li><Link to="/products/superfoods/moringa-leaf-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Moringa Leaf Powder</Link></li>
                       <li><Link to="/products/spices/moringa-karam-poodi" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Moringa Karam Poodi</Link></li>
-                      <li><Link to="/products/spices/kura-karam" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Curry Powder (Kurra Karam)</Link></li>
+                      <li><Link to="/products/spices/kura-karam" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Curry Powder (Kura Karam)</Link></li>
                       <li><Link to="/products" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>All Products</Link></li>
                     </ul>
                   </div>

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import jaggeryPowderImg from '../../img/jaggery_powder.jpg';
 
 export default function JaggeryPowder() {
   useEffect(() => {
@@ -341,7 +342,7 @@ export default function JaggeryPowder() {
         <div className="col-lg-4">
           <div className="mb-4">
             <img 
-              src="https://placehold.co/600x400" 
+              src={jaggeryPowderImg} 
               alt="Jaggery Powder" 
               className="img-fluid rounded shadow-sm"
             />

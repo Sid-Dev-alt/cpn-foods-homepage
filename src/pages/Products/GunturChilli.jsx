@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import gunturChilliImg from '../../img/guntur_chilli.jpg';
 
 export default function GunturChilli() {
   useEffect(() => {
@@ -244,8 +245,8 @@ export default function GunturChilli() {
         <div className="col-lg-4">
           <div className="mb-4">
             <img 
-              src="https://placehold.co/600x400" 
-              alt="" 
+              src={gunturChilliImg} 
+              alt="Guntur Chilli" 
               className="img-fluid rounded shadow-sm"
             />
           </div>
