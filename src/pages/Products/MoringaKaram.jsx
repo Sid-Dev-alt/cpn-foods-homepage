@@ -3,6 +3,12 @@ import moringaKaramImg from '../../img/moringa_karam_podi.jpg';
 
 export default function MoringaKaram() {
   useEffect(() => {
+    document.title = "Moringa Karam Poodi | Healthy Andhra Spice Blend | CPN Foods";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Boost your immunity with our authentic Moringa Kaaram Podi. Traditional Andhra recipe combining nutrient-rich drumstick leaves with pure spicy chilies.");
+    }
+
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.id = 'moringa-karam-poodi-schema';
@@ -25,7 +31,7 @@ export default function MoringaKaram() {
     document.head.appendChild(script);
 
     return () => {
-      const el = document.getElementById('curry-powder-schema');
+      const el = document.getElementById('moringa-karam-poodi-schema');
       if (el) el.remove();
     };
   }, []);

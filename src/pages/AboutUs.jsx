@@ -4,6 +4,12 @@ import { PiPlantFill, PiCertificateFill, PiHandshakeFill } from 'react-icons/pi'
 
 export default function AboutUs() {
   useEffect(() => {
+    document.title = "Our Legacy Since 1943 | CPN Foods Story";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Learn about CPN Foods' journey from Osman Gunj in 1943 to becoming a trusted name in pure, farm-direct spices. 83 years of trust and quality.");
+    }
+
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.id = 'about-schema';

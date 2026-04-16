@@ -3,6 +3,12 @@ import jaggeryImg from '../../img/jaggery_block.webp';
 
 export default function Jaggery() {
   useEffect(() => {
+    document.title = "Pure Jaggery (Gur) | Natural Sugarcane Sweetener | CPN Foods";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Authentic, naturally processed jaggery. A healthy alternative to refined sugar, rich in minerals and free from chemicals. Traditionally made in India.");
+    }
+
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.id = 'jaggery-schema';

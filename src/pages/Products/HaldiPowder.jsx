@@ -3,6 +3,12 @@ import haldiPowderImg from '../../img/haldi_powder.webp';
 
 export default function HaldiPowder() {
   useEffect(() => {
+    document.title = "Pure Haldi Powder | High Curcumin Turmeric | CPN Foods";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Buy pure, high-curcumin Haldi (Turmeric) powder. Sourced from the best Indian turmeric rhizomes. Natural colour, strong aroma, and zero additives.");
+    }
+
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.id = 'haldi-powder-schema';

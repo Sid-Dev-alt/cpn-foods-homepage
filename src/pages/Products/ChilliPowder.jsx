@@ -3,6 +3,12 @@ import chilliPowderImg from '../../img/chilli_powder.webp';
 
 export default function ChilliPowder() {
   useEffect(() => {
+    document.title = "Pure Chilli Powder | Authentic Guntur Spicy Red Chilli | CPN Foods";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Buy high-pungency, pure Guntur-based chilli powder. No artificial colours or fillers. Authentic Indian spice for heat and flavor. Wholesale available.");
+    }
+
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.id = 'chilli-powder-schema';

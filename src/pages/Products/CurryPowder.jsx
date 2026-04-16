@@ -1,8 +1,14 @@
 import React, { useEffect } from 'react';
-import curryPowderImg from '../../img/sec7.png';
+import curryPowderImg from '../../img/kura_karam.jpg';
 
 export default function CurryPowder() {
   useEffect(() => {
+    document.title = "Curry Powder (Kura Karam) | Traditional Andhra Spice Blend | CPN Foods";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Authentic Andhra-style Curry Powder (Kura Karam). A perfect blend of 14 spices for delicious, home-style curries. Pure, spicy, and aromatic.");
+    }
+
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.id = 'kura-karam-schema';
@@ -168,7 +174,7 @@ export default function CurryPowder() {
         <div className="col-lg-4">
           <div className="mb-4">
             <img
-              src="https://placehold.co/600x400"
+              src={curryPowderImg}
               alt="Curry Powder (Kura Karam)"
               className="img-fluid rounded shadow-sm"
             />

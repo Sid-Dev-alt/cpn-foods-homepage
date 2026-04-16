@@ -3,6 +3,12 @@ import jaggeryPowderImg from '../../img/jaggery_powder.jpg';
 
 export default function JaggeryPowder() {
   useEffect(() => {
+    document.title = "Natural Jaggery Powder | Healthier Alternative to Sugar | CPN Foods";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Premium jaggery powder available in sugarcane, coconut, and palm variants. 100% natural, unrefined, and perfect for tea, coffee, and traditional Indian sweets.");
+    }
+
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.id = 'jaggery-powder-schema';

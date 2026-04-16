@@ -3,6 +3,12 @@ import { motion } from 'framer-motion';
 
 export default function ChilliDifference() {
   useEffect(() => {
+    document.title = "Guntur vs Kashmiri vs Byadgi Chilli | Heat, Colour & Taste Comparison";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "A detailed comparison of India's most popular chillies: Guntur Sannam, Kashmiri, and Byadgi. Learn about heat levels, colour intensity, and culinary uses.");
+    }
+
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.id = 'article-schema';

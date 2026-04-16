@@ -46,14 +46,14 @@ function Header() {
                       className="dropdown-menu show shadow border-0 position-absolute rounded-3 mt-2"
                       style={{ top: '100%', left: '-10px', minWidth: '180px' }}
                     >
-                      <Link to="/products/spices/guntur-chilli" className="dropdown-item py-2 fw-medium text-dark hover-red">Guntur Chilli</Link>
-                      <Link to="/products/spices/chilli-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Chilli Powder</Link>
-                      <Link to="/products/spices/haldi-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Haldi Powder</Link>
+                      <Link to="/products/guntur-super-hot-chilli-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Guntur Chilli</Link>
+                      <Link to="/chilli-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Chilli Powder</Link>
+                      <Link to="/products/turmeric-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Haldi Powder</Link>
                       <Link to="/products/natural-sweeteners/jaggery" className="dropdown-item py-2 fw-medium text-dark hover-red">Jaggery</Link>
                       <Link to="/jaggery-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Jaggery Powder</Link>
-                      <Link to="/products/superfoods/moringa-leaf-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Moringa Leaf Powder</Link>
+                      <Link to="/products/moringa-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Moringa Leaf Powder</Link>
                       <Link to="/products/spices/moringa-karam-poodi" className="dropdown-item py-2 fw-medium text-dark hover-red">Moringa Karam Poodi</Link>
-                      <Link to="/products/spices/kura-karam" className="dropdown-item py-2 fw-medium text-dark hover-red">Curry Powder (Kura Karam)</Link>
+                      <Link to="/products/avakaya-special-karam" className="dropdown-item py-2 fw-medium text-dark hover-red">Curry Powder (Kura Karam)</Link>
                       <Link to="/products" className="dropdown-item py-2 fw-medium text-dark hover-red border-top border-light">All Products</Link>
                     </motion.div>
                   )}
@@ -117,14 +117,14 @@ function Header() {
                   <div className="d-flex flex-column gap-2 mb-1">
                     <span className="text-dark py-2">PRODUCTS</span>
                     <ul className="list-unstyled ms-3 d-flex flex-column gap-2 fw-medium border-start border-2 ps-3 border-danger">
-                      <li><Link to="/products/spices/guntur-chilli" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Guntur Chilli</Link></li>
-                      <li><Link to="/products/spices/chilli-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Chilli Powder</Link></li>
-                      <li><Link to="/products/spices/haldi-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Haldi Powder</Link></li>
+                      <li><Link to="/products/guntur-super-hot-chilli-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Guntur Chilli</Link></li>
+                      <li><Link to="/chilli-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Chilli Powder</Link></li>
+                      <li><Link to="/products/turmeric-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Haldi Powder</Link></li>
                       <li><Link to="/products/natural-sweeteners/jaggery" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Jaggery</Link></li>
                       <li><Link to="/jaggery-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Jaggery Powder</Link></li>
-                      <li><Link to="/products/superfoods/moringa-leaf-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Moringa Leaf Powder</Link></li>
+                      <li><Link to="/products/moringa-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Moringa Leaf Powder</Link></li>
                       <li><Link to="/products/spices/moringa-karam-poodi" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Moringa Karam Poodi</Link></li>
-                      <li><Link to="/products/spices/kura-karam" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Curry Powder (Kura Karam)</Link></li>
+                      <li><Link to="/products/avakaya-special-karam" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Curry Powder (Kura Karam)</Link></li>
                       <li><Link to="/products" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>All Products</Link></li>
                     </ul>
                   </div>

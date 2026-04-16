@@ -33,7 +33,8 @@ export default function Footer() {
               {/* <li><Link to="/" className="text-decoration-none text-muted small hover-red">Home</Link></li> */}
               {/* <li><Link to="/products" className="text-decoration-none text-muted small hover-red">Products</Link></li> */}
               {/* <li><Link to="/shop" className="text-decoration-none text-muted small hover-red">Shop</Link></li> */}
-              <li><Link to="/about-us" className="text-decoration-none text-muted small hover-red">About Us</Link></li>
+              <li><Link to="/our-legacy" className="text-decoration-none text-muted small hover-red">Our Legacy</Link></li>
+              <li><Link to="/knowledge-hub" className="text-decoration-none text-muted small hover-red">Knowledge Hub</Link></li>
             </ul>
           </div>
 

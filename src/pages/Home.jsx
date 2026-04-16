@@ -11,6 +11,14 @@ import ReliableSupplySection from '../components/ReliableSupplySection';
 import StandardSection from '../components/StandardSection';
 
 function Home() {
+  useEffect(() => {
+    document.title = "CPN Foods | Authentic Guntur Chilli & Pure Indian Spices Since 1943";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Discover the 83-year legacy of CPN Foods. Sourcing pure, unadulterated Guntur chillies, turmeric, and moringa leaf powder directly from farmers.");
+    }
+  }, []);
+
   return (
     <>
       <Hero />

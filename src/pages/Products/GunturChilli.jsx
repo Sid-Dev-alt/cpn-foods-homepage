@@ -3,6 +3,12 @@ import gunturChilliImg from '../../img/guntur_chilli.jpg';
 
 export default function GunturChilli() {
   useEffect(() => {
+    document.title = "Guntur Red Chilli | Premium Heat & High Scoville S4 Chilli | CPN Foods";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Buy authentic Guntur Sannam (S4) chillies. High heat, thin skin, and vibrant colour. Sourced directly from Guntur, Andhra Pradesh. Available for wholesale and export.");
+    }
+
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.id = 'guntur-chilli-schema';

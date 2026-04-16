@@ -3,6 +3,12 @@ import moringaLeafImg from '../../img/moringa_leaf_powder.webp';
 
 export default function MoringaLeafPowder() {
   useEffect(() => {
+    document.title = "Pure Moringa Leaf Powder | Natural Superfood | CPN Foods";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Source 100% natural, nutrient-dense Moringa Leaf Powder. Made from dried drumstick leaves, rich in antioxidants and vitamins. Pure, plant-based wellness.");
+    }
+
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.id = 'moringa-leaf-powder-schema';

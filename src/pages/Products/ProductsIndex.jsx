@@ -6,7 +6,7 @@ import haldiPowderImg from '../../img/haldi_powder.webp';
 import jaggeryImg from '../../img/jaggery_block.webp';
 import moringaLeafImg from '../../img/moringa_leaf_powder.webp';
 import moringaKaramImg from '../../img/moringa_karam_podi.jpg';
-import kuraKaramImg from '../../img/sec7.png';
+import kuraKaramImg from '../../img/kura_karam.jpg';
 
 
 const products = [
@@ -63,12 +63,20 @@ const products = [
     name: 'Curry Powder (Kura Karam)',
     category: 'Spices & Podis',
     path: '/products/spices/kura-karam',
-    image: "https://placehold.co/600x400",
+    image: kuraKaramImg,
     description: 'A powerful blend of 14 carefully selected spices, your complete curry solution.'
   }
 ];
 
 export default function ProductsIndex() {
+  React.useEffect(() => {
+    document.title = "Our Products | Pure Indian Spices & Superfoods | CPN Foods";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Explore CPN Foods' catalog of pure Guntur chilli, turmeric powder, moringa leaf powder, and natural jaggery. 83 years of trust and quality.");
+    }
+  }, []);
+
   return (
     <div className="container py-5 mt-5">
       <div className="text-center mb-5">
