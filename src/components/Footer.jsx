@@ -19,9 +19,8 @@ export default function Footer() {
               
             </p>
             <div className="d-flex gap-3">
-              <a href="#" className="text-muted hover-red fs-5 transition-all"><FaFacebookF /></a>
-              <a href="#" className="text-muted hover-red fs-5 transition-all"><FaTwitter /></a>
-              <a href="#" className="text-muted hover-red fs-5 transition-all"><FaInstagram /></a>
+              <a href="https://www.facebook.com/cpnfoods" className="text-muted hover-red fs-5 transition-all" target='_blank'><FaFacebookF /></a>
+              <a href="https://www.instagram.com/cpnfoods/" className="text-muted hover-red fs-5 transition-all" target='_blank'><FaInstagram /></a>
               {/* <a href="#" className="text-muted hover-red fs-5 transition-all"><FaLinkedinIn /></a> */}
             </div>
           </div>

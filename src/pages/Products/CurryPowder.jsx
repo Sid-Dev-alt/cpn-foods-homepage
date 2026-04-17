@@ -11,7 +11,7 @@ export default function CurryPowder() {
 
     const script = document.createElement('script');
     script.type = 'application/ld+json';
-    script.id = 'kura-karam-schema';
+    script.id = 'curry-powder-schema';
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Product",
@@ -31,7 +31,7 @@ export default function CurryPowder() {
     document.head.appendChild(script);
 
     return () => {
-      const el = document.getElementById('kura-karam-schema');
+      const el = document.getElementById('curry-powder-schema');
       if (el) el.remove();
     };
   }, []);

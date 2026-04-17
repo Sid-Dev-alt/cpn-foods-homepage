@@ -42,7 +42,7 @@ export default function ProductSubCategory() {
   }
 
   // If the subcategory is exactly 'kura-karam', render the dedicated component
-  if (subcategory === 'kura-karam') {
+  if (subcategory === 'curry-powder' || subcategory === 'kura-karam') {
     return <CurryPowder />;
   }
 

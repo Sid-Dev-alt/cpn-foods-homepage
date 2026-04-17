@@ -69,7 +69,7 @@ function App() {
             <Route path="/products/guntur-super-hot-chilli-powder" element={<GunturChilli />} />
             <Route path="/products/turmeric-powder" element={<HaldiPowder />} />
             <Route path="/products/moringa-powder" element={<MoringaPowder />} />
-            <Route path="/products/avakaya-special-karam" element={<CurryPowder />} />
+            <Route path="/products/curry-powder" element={<CurryPowder />} />
 
             {/* Existing Legacy Routes (Keep for compatibility) */}
             <Route path="/guntur-chilli" element={<GunturChilli />} />

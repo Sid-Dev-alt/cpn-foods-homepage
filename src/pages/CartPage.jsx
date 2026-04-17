@@ -15,7 +15,6 @@ function CartPage() {
       return;
     }
     alert("Coming Soon...");
-    clearCart();
   };
 
   if (cartItems.length === 0) {

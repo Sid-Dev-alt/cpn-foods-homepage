@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import cpnLogo from '../../cpn-logo.png';
 import { BiSearch, BiCart, BiUser } from 'react-icons/bi';
 import { HiOutlineMenuAlt4, HiX } from 'react-icons/hi';
@@ -13,6 +13,15 @@ function Header() {
   const { cartCount } = useCart();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
+  const location = useLocation();
+
+  const isProductsActive = location.pathname.startsWith('/products') ||
+    ['/guntur-chilli', '/chilli-powder', '/moringa-leaf-powder', '/haldi-powder', '/jaggery', '/jaggery-powder', '/moringa-karam-poodi', '/kura-karam', '/curry-powder'].includes(location.pathname);
+
+  const getLinkClass = (path, exact = false) => {
+    const isActive = exact ? location.pathname === path : location.pathname.startsWith(path);
+    return `text-decoration-none ${isActive ? 'text-cpn-red' : 'text-dark hover-red'}`;
+  };
 
   return (
     <header className="bg-white sticky-top shadow-sm" style={{ borderBottom: '1px solid #f0f0f0' }}>
@@ -27,13 +36,13 @@ function Header() {
           {/* Navigation Links */}
           <nav className="d-none d-lg-flex ml-auto justify-content-center flex-grow-1">
             <ul className="list-unstyled d-flex m-0 fw-bold" style={{ fontSize: '0.9rem', letterSpacing: '0.5px' }}>
-              <li className="mx-3"><Link to="/" className="text-decoration-none text-cpn-red">HOME</Link></li>
-              <li 
+              <li className="mx-3"><Link to="/" className={getLinkClass('/', true)}>HOME</Link></li>
+              <li
                 className="mx-3 position-relative"
                 onMouseEnter={() => setIsProductsDropdownOpen(true)}
                 onMouseLeave={() => setIsProductsDropdownOpen(false)}
               >
-                <Link to="/products" className="text-decoration-none text-dark hover-red d-flex align-items-center gap-1" style={{ paddingBottom: '20px', marginBottom: '-20px' }}>
+                <Link to="/products" className={`text-decoration-none ${isProductsActive ? 'text-cpn-red' : 'text-dark hover-red'} d-flex align-items-center gap-1`} style={{ paddingBottom: '20px', marginBottom: '-20px' }}>
                   PRODUCTS <BiChevronDown />
                 </Link>
                 <AnimatePresence>
@@ -53,14 +62,14 @@ function Header() {
                       <Link to="/jaggery-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Jaggery Powder</Link>
                       <Link to="/products/moringa-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Moringa Leaf Powder</Link>
                       <Link to="/products/spices/moringa-karam-poodi" className="dropdown-item py-2 fw-medium text-dark hover-red">Moringa Karam Poodi</Link>
-                      <Link to="/products/avakaya-special-karam" className="dropdown-item py-2 fw-medium text-dark hover-red">Curry Powder (Kura Karam)</Link>
+                      <Link to="/products/curry-powder" className="dropdown-item py-2 fw-medium text-dark hover-red">Curry Powder (Kura Karam)</Link>
                       <Link to="/products" className="dropdown-item py-2 fw-medium text-dark hover-red border-top border-light">All Products</Link>
                     </motion.div>
                   )}
                 </AnimatePresence>
               </li>
-              <li className="mx-3"><Link to="/shop" className="text-decoration-none text-dark hover-red">SHOP</Link></li>
-              <li className="mx-3"><Link to="/faqs" className="text-decoration-none text-dark hover-red">FAQs</Link></li>
+              <li className="mx-3"><Link to="/shop" className={getLinkClass('/shop')}>SHOP</Link></li>
+              <li className="mx-3"><Link to="/faqs" className={getLinkClass('/faqs')}>FAQs</Link></li>
             </ul>
           </nav>
 
@@ -112,10 +121,10 @@ function Header() {
           >
             <div className="container-fluid px-4 py-3">
               <ul className="list-unstyled m-0 fw-bold d-flex flex-column gap-3" style={{ fontSize: '1rem' }}>
-                <li><Link to="/" className="text-decoration-none text-cpn-red d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>HOME</Link></li>
+                <li><Link to="/" className={`text-decoration-none ${location.pathname === '/' ? 'text-cpn-red' : 'text-dark'} d-block py-2`} onClick={() => setIsMobileMenuOpen(false)}>HOME</Link></li>
                 <li>
                   <div className="d-flex flex-column gap-2 mb-1">
-                    <span className="text-dark py-2">PRODUCTS</span>
+                    <span className={`py-2 ${isProductsActive ? 'text-cpn-red' : 'text-dark'}`}>PRODUCTS</span>
                     <ul className="list-unstyled ms-3 d-flex flex-column gap-2 fw-medium border-start border-2 ps-3 border-danger">
                       <li><Link to="/products/guntur-super-hot-chilli-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Guntur Chilli</Link></li>
                       <li><Link to="/chilli-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Chilli Powder</Link></li>
@@ -124,13 +133,13 @@ function Header() {
                       <li><Link to="/jaggery-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Jaggery Powder</Link></li>
                       <li><Link to="/products/moringa-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Moringa Leaf Powder</Link></li>
                       <li><Link to="/products/spices/moringa-karam-poodi" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Moringa Karam Poodi</Link></li>
-                      <li><Link to="/products/avakaya-special-karam" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Curry Powder (Kura Karam)</Link></li>
+                      <li><Link to="/products/curry-powder" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>Curry Powder (Kura Karam)</Link></li>
                       <li><Link to="/products" className="text-decoration-none text-muted" onClick={() => setIsMobileMenuOpen(false)}>All Products</Link></li>
                     </ul>
                   </div>
                 </li>
-                <li><Link to="/shop" className="text-decoration-none text-dark d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>SHOP</Link></li>
-                <li><Link to="/faqs" className="text-decoration-none text-dark d-block py-2" onClick={() => setIsMobileMenuOpen(false)}>FAQs</Link></li>
+                <li><Link to="/shop" className={`text-decoration-none ${location.pathname.startsWith('/shop') ? 'text-cpn-red' : 'text-dark'} d-block py-2`} onClick={() => setIsMobileMenuOpen(false)}>SHOP</Link></li>
+                <li><Link to="/faqs" className={`text-decoration-none ${location.pathname.startsWith('/faqs') ? 'text-cpn-red' : 'text-dark'} d-block py-2`} onClick={() => setIsMobileMenuOpen(false)}>FAQs</Link></li>
                 {user && (
                   <li className="pt-2 border-top">
                     <button className="btn btn-outline-danger w-100" onClick={() => { logout(); setIsMobileMenuOpen(false); }}>Logout All Devices</button>

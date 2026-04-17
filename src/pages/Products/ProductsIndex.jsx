@@ -62,7 +62,7 @@ const products = [
     id: 7,
     name: 'Curry Powder (Kura Karam)',
     category: 'Spices & Podis',
-    path: '/products/spices/kura-karam',
+    path: '/products/curry-powder',
     image: kuraKaramImg,
     description: 'A powerful blend of 14 carefully selected spices, your complete curry solution.'
   }
