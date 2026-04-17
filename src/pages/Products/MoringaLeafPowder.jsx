@@ -240,7 +240,7 @@ export default function MoringaLeafPowder() {
 
           {/* Packaging & Supply Options Section */}
           {/* <section className="mb-5">
-            <h2 className="fw-bold mb-4">Packaging & Supply Options</h2>
+            <h2 className="fw-bold mb-4">Packaging & Supply Options</h2>  
             <p className="text-muted lh-lg mb-3">
               CPN Foods moringa leaf powder is available in:
             </p>
