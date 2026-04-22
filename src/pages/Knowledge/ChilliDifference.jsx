@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { HiArrowNarrowLeft } from 'react-icons/hi';
 
 export default function ChilliDifference() {
   useEffect(() => {
@@ -46,6 +48,9 @@ export default function ChilliDifference() {
 
   return (
     <div className="container py-5 mt-4">
+      <Link to="/knowledge-hub" className="text-decoration-none text-danger fw-bold small d-inline-flex align-items-center mb-4 hover-translate-x-n3 transition-all">
+        <HiArrowNarrowLeft className="me-2" /> BACK TO KNOWLEDGE HUB
+      </Link>
       {/* Article Header */}
       <motion.div 
         initial={{ opacity: 0, y: 20 }}

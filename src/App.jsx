@@ -9,6 +9,11 @@ import AboutUs from './pages/AboutUs';
 import SourcingQuality from './pages/SourcingQuality';
 import KnowledgeHub from './pages/KnowledgeHub';
 import ChilliDifference from './pages/Knowledge/ChilliDifference';
+import TurmericGuide from './pages/Knowledge/TurmericGuide';
+import JaggeryBenefits from './pages/Knowledge/JaggeryBenefits';
+import MoringaSuperfood from './pages/Knowledge/MoringaSuperfood';
+import SpicePreservation from './pages/Knowledge/SpicePreservation';
+
 import FAQs from './pages/FAQs';
 import Contact from './pages/Contact';
 import ProductsIndex from './pages/Products/ProductsIndex';
@@ -51,6 +56,11 @@ function App() {
             <Route path="/knowledge-hub" element={<KnowledgeHub />} />
             <Route path="/knowledge-hub/how-to-detect-fake-chilli-powder" element={<ChilliDifference />} />
             <Route path="/knowledge-hub/why-natural-chilli-powder-is-not-bright-red" element={<ChilliDifference />} />
+            <Route path="/knowledge-hub/the-golden-spice-lakadong-turmeric-benefits" element={<TurmericGuide />} />
+            <Route path="/knowledge-hub/jaggery-vs-sugar-health-benefits" element={<JaggeryBenefits />} />
+            <Route path="/knowledge-hub/moringa-leaf-powder-superfood-benefits" element={<MoringaSuperfood />} />
+            <Route path="/knowledge-hub/how-to-store-spices-for-freshness" element={<SpicePreservation />} />
+            <Route path="/knowledge-hub/difference-between-guntur-kashmiri-byadgi-chilli" element={<ChilliDifference />} />
             
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/contact" element={<Contact />} />

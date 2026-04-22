@@ -69,6 +69,7 @@ function Header() {
                 </AnimatePresence>
               </li>
               <li className="mx-3"><Link to="/shop" className={getLinkClass('/shop')}>SHOP</Link></li>
+              <li className="mx-3"><Link to="/knowledge-hub" className={getLinkClass('/knowledge-hub')}>KNOWLEDGE HUB</Link></li>
               <li className="mx-3"><Link to="/faqs" className={getLinkClass('/faqs')}>FAQs</Link></li>
             </ul>
           </nav>
@@ -139,6 +140,7 @@ function Header() {
                   </div>
                 </li>
                 <li><Link to="/shop" className={`text-decoration-none ${location.pathname.startsWith('/shop') ? 'text-cpn-red' : 'text-dark'} d-block py-2`} onClick={() => setIsMobileMenuOpen(false)}>SHOP</Link></li>
+                <li><Link to="/knowledge-hub" className={`text-decoration-none ${location.pathname.startsWith('/knowledge-hub') ? 'text-cpn-red' : 'text-dark'} d-block py-2`} onClick={() => setIsMobileMenuOpen(false)}>KNOWLEDGE HUB</Link></li>
                 <li><Link to="/faqs" className={`text-decoration-none ${location.pathname.startsWith('/faqs') ? 'text-cpn-red' : 'text-dark'} d-block py-2`} onClick={() => setIsMobileMenuOpen(false)}>FAQs</Link></li>
                 {user && (
                   <li className="pt-2 border-top">
