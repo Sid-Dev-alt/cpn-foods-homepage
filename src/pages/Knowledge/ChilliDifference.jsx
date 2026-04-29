@@ -179,10 +179,6 @@ export default function ChilliDifference() {
               <span className="badge bg-danger mb-2">AROMATIC</span>
               <p className="small text-muted">Byadgi chilli (Earthy Scent)</p>
             </div>
-            <hr />
-            <p className="text-muted small mb-0">
-              Source: CPN Foods Quality Research Cell
-            </p>
           </div>
         </div>
       </div>

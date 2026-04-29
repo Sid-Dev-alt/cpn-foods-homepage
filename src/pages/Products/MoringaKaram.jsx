@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import moringaKaramImg from '../../img/moringa_karam_podi.jpg';
 
 export default function MoringaKaram() {
@@ -158,7 +159,14 @@ export default function MoringaKaram() {
               Just 2 spoons… and your meal transforms into a nutritious delight!
             </p>
           </section>
+        <section className="mb-5">
+            <h2 className="fw-bold mb-4">Beyond Sweetener: The Traditional Uses of Jaggery</h2>
+            <p className="text-muted lh-lg mb-3">
+             In Indian households, jaggery powder is more than just a sweetener—it's a time-honored culinary and medicinal staple. Used traditionally for everything from sweetening evening chai to post-meal digestion aid, its versatility stems from its natural properties. <Link to="/knowledge-hub/moringa-leaf-powder-superfood-benefits" className="text-primary text-decoration-none fw-medium">read more</Link>
+            </p>
+          </section>
         </div>
+
 
         {/* Sidebar / Additional Info */}
         <div className="col-lg-4">

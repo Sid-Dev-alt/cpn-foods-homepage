@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import jaggeryPowderImg from '../../img/jaggery_powder.jpg';
 
 export default function JaggeryPowder() {
@@ -326,6 +327,13 @@ export default function JaggeryPowder() {
               We ensure purity, traceability, and natural taste across all three types.
             </p>
             <hr className="my-5" />
+          </section>
+
+          <section className="mb-5">
+            <h2 className="fw-bold mb-4">Beyond Sweetener: The Traditional Uses of Jaggery</h2>
+            <p className="text-muted lh-lg mb-3">
+             In Indian households, jaggery powder is more than just a sweetener—it's a time-honored culinary and medicinal staple. Used traditionally for everything from sweetening evening chai to post-meal digestion aid, its versatility stems from its natural properties. <Link to="/knowledge-hub/jaggery-vs-sugar-health-benefits" className="text-primary text-decoration-none fw-medium">read more</Link>
+            </p>
           </section>
 
           {/* Packaging & Supply Options */}

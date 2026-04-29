@@ -233,7 +233,7 @@ export default function GunturChilli() {
           <section className="mb-5">
             <h2 className="fw-bold mb-4">The Great Chilli Debate: Guntur vs Kashmiri vs Byadgi</h2>
             <p className="text-muted lh-lg mb-3">
-              Indian cuisine is defined by its vibrant chillies. But not all red chillies are created equal. Understanding the difference between the heat of Guntur, the colour of Kashmiri, and the aroma of Byadgi can transform your cooking from ordinary to authentic. <Link to="/knowledge-hub/difference-between-guntur-kashmiri-byadgi-chilli" className="text-primary text-decoration-none fw-medium">know more</Link>
+              Indian cuisine is defined by its vibrant chillies. But not all red chillies are created equal. Understanding the difference between the heat of Guntur, the colour of Kashmiri, and the aroma of Byadgi can transform your cooking from ordinary to authentic. <Link to="/knowledge-hub/difference-between-guntur-kashmiri-byadgi-chilli" className="text-primary text-decoration-none fw-medium">read more</Link>
             </p>
           </section>
 

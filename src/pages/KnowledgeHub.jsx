@@ -31,13 +31,6 @@ const articles = [
     link: "/knowledge-hub/moringa-leaf-powder-superfood-benefits",
     category: "Superfood",
     icon: <FaLeaf className="text-success" />
-  },
-  {
-    title: "How to Store Spices: Keeping the Aroma Alive",
-    excerpt: "Expert tips on protecting your spices from the 'Four Enemies' to preserve potency and flavor.",
-    link: "/knowledge-hub/how-to-store-spices-for-freshness",
-    category: "Storage Guide",
-    icon: <FaBookOpen className="text-info" />
   }
 ];
 

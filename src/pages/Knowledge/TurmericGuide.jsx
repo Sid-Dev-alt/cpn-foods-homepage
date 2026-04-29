@@ -151,10 +151,7 @@ export default function TurmericGuide() {
               <span className="badge bg-warning text-dark mb-2">ANTIOXIDANT</span>
               <p className="small text-muted">Fights free radicals to support skin health.</p>
             </div>
-            <hr />
-            <p className="text-muted small mb-0">
-              Source: CPN Foods Wellness Research
-            </p>
+          
           </div>
         </div>
       </div>

@@ -149,10 +149,6 @@ export default function MoringaSuperfood() {
               <span className="badge bg-success mb-2">100% PURE</span>
               <p className="small text-muted">No fillers, additives, or preservatives.</p>
             </div>
-            <hr />
-            <p className="text-muted small mb-0">
-              Source: CPN Foods Wellness Research
-            </p>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import jaggeryImg from '../../img/jaggery_block.webp';
 
 export default function Jaggery() {
@@ -210,6 +211,13 @@ export default function Jaggery() {
             <hr className="my-5" />
           </section>
 
+          <section className="mb-5">
+            <h2 className="fw-bold mb-4">Jaggery vs Sugar: Making the Healthier Choice</h2>
+            <p className="text-muted lh-lg mb-3">
+              Modern diets are often overloaded with refined white sugar, leading to numerous health concerns. Traditional Indian Jaggery (Gur), specifically the chemical-free variety, offers a mineral-rich alternative that does more than just sweeten your food. <Link to="/knowledge-hub/jaggery-vs-sugar-health-benefits" className="text-primary text-decoration-none fw-medium">read more</Link>
+            </p>
+          </section>
+
           {/* Packaging & Supply Options */}
           {/* <section className="mb-5">
             <h2 className="fw-bold mb-4">Packaging & Supply Options</h2>
@@ -225,9 +233,9 @@ export default function Jaggery() {
         {/* Sidebar / Additional Info */}
         <div className="col-lg-4">
           <div className="mb-4">
-            <img 
-              src={jaggeryImg} 
-              alt="Jaggery Block" 
+            <img
+              src={jaggeryImg}
+              alt="Jaggery Block"
               className="img-fluid rounded shadow-sm"
             />
           </div>

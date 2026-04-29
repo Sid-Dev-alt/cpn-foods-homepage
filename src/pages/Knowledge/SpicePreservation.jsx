@@ -141,10 +141,6 @@ export default function SpicePreservation() {
               <span className="badge bg-danger mb-2">COLOUR CHECK</span>
               <p className="small text-muted">Dull colour often means the oils have dried up.</p>
             </div>
-            <hr />
-            <p className="text-muted small mb-0">
-              Source: CPN Foods Quality Cell
-            </p>
           </div>
         </div>
       </div>

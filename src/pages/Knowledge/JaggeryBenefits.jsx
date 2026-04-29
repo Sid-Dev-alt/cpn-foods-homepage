@@ -154,10 +154,6 @@ export default function JaggeryBenefits() {
               <span className="badge bg-success mb-2">PURE CANE</span>
               <p className="small text-muted">100% natural sugarcane source.</p>
             </div>
-            <hr />
-            <p className="text-muted small mb-0">
-              Source: CPN Foods Nutrition Cell
-            </p>
           </div>
         </div>
       </div>
