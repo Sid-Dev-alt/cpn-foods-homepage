@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import haldiPowderImg from '../../img/haldi_powder.webp';
 
 export default function HaldiPowder() {
@@ -185,6 +186,13 @@ export default function HaldiPowder() {
               <li>No artificial additives</li>
             </ul>
             <hr className="my-5" />
+          </section>
+
+            <section className="mb-5">
+            <h2 className="fw-bold mb-4">The Golden Spice: Why Lakadong Turmeric is the Gold Standard</h2>
+            <p className="text-muted lh-lg mb-3">
+             Turmeric (Haldi) has been the cornerstone of Indian wellness for millennia. But not all turmeric is the same. The secret lies in a compound called Curcumin, and Lakadong Turmeric from Meghalaya is nature's most potent source. <Link to="/knowledge-hub/the-golden-spice-lakadong-turmeric-benefits" className="text-primary text-decoration-none fw-medium">know more</Link>
+            </p>
           </section>
 
           {/* Packaging & Supply Options */}

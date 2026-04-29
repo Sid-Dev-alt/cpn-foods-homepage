@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import gunturChilliImg from '../../img/guntur_chilli.jpg';
 
 export default function GunturChilli() {
@@ -226,6 +227,14 @@ export default function GunturChilli() {
               We supply Guntur chilli in multiple forms to suit different customer needs.
             </p>
             <hr className="my-5" />
+          </section>
+
+          {/* The Great Chilli Debate */}
+          <section className="mb-5">
+            <h2 className="fw-bold mb-4">The Great Chilli Debate: Guntur vs Kashmiri vs Byadgi</h2>
+            <p className="text-muted lh-lg mb-3">
+              Indian cuisine is defined by its vibrant chillies. But not all red chillies are created equal. Understanding the difference between the heat of Guntur, the colour of Kashmiri, and the aroma of Byadgi can transform your cooking from ordinary to authentic. <Link to="/knowledge-hub/difference-between-guntur-kashmiri-byadgi-chilli" className="text-primary text-decoration-none fw-medium">know more</Link>
+            </p>
           </section>
 
           {/* Forms Available */}
