@@ -13,6 +13,8 @@ import TurmericGuide from './pages/Knowledge/TurmericGuide';
 import JaggeryBenefits from './pages/Knowledge/JaggeryBenefits';
 import MoringaSuperfood from './pages/Knowledge/MoringaSuperfood';
 import SpicePreservation from './pages/Knowledge/SpicePreservation';
+import ChilliAdulteration from './pages/Knowledge/ChilliAdulteration';
+import IdentifyAdulteration from './pages/Knowledge/IdentifyAdulteration';
 
 import FAQs from './pages/FAQs';
 import Contact from './pages/Contact';
@@ -54,7 +56,9 @@ function App() {
             {/* Knowledge Hub */}
             <Route path="/knowledge" element={<KnowledgeHub />} />
             <Route path="/knowledge-hub" element={<KnowledgeHub />} />
-            <Route path="/knowledge-hub/how-to-detect-fake-chilli-powder" element={<ChilliDifference />} />
+            <Route path="/knowledge-hub/how-to-detect-fake-chilli-powder" element={<ChilliAdulteration />} />
+            <Route path="/knowledge-hub/adulteration-in-chilli-powder-hidden-danger" element={<ChilliAdulteration />} />
+            <Route path="/knowledge-hub/how-to-identify-adulteration-at-home" element={<IdentifyAdulteration />} />
             <Route path="/knowledge-hub/why-natural-chilli-powder-is-not-bright-red" element={<ChilliDifference />} />
             <Route path="/knowledge-hub/the-golden-spice-lakadong-turmeric-benefits" element={<TurmericGuide />} />
             <Route path="/knowledge-hub/jaggery-vs-sugar-health-benefits" element={<JaggeryBenefits />} />

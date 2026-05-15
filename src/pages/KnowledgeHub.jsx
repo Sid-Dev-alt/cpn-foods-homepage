@@ -1,9 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaBookOpen, FaLightbulb, FaLeaf } from 'react-icons/fa';
+import { FaBookOpen, FaLightbulb, FaLeaf, FaShieldAlt } from 'react-icons/fa';
 
 const articles = [
+  {
+    title: "Simple Ways to Identify Adulteration in Chilli Powder at Home",
+    excerpt: "Learn simple home tests to identify adulteration in chilli powder like the water test, palm rub test, and more.",
+    link: "/knowledge-hub/how-to-identify-adulteration-at-home",
+    category: "Food Safety",
+    icon: <FaShieldAlt className="text-danger" />
+  },
+  {
+    title: "The Hidden Danger: Adulteration in Chilli Powder",
+    excerpt: "Learn how to identify pure chilli powder and protect your family from harmful synthetic dyes and fillers.",
+    link: "/knowledge-hub/adulteration-in-chilli-powder-hidden-danger",
+    category: "Food Safety",
+    icon: <FaShieldAlt className="text-danger" />
+  },
   {
     title: "The Great Chilli Debate: Guntur vs Kashmiri vs Byadgi",
     excerpt: "Understanding the difference between the heat of Guntur, the colour of Kashmiri, and the aroma of Byadgi.",
