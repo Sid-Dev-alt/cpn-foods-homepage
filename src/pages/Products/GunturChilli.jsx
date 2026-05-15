@@ -237,6 +237,22 @@ export default function GunturChilli() {
             </p>
           </section>
 
+          {/* The Hidden Danger: Adulteration in Chilli Powder */}
+          <section className="mb-5">
+            <h2 className="fw-bold mb-4">The Hidden Danger: Adulteration in Chilli Powder</h2>
+            <p className="text-muted lh-lg mb-3">
+              Chilli powder is one of the most commonly adulterated spices. Learn how to identify harmful substances like synthetic dyes, brick powder, and sawdust that might be hiding in your everyday spices. <Link to="/knowledge-hub/adulteration-in-chilli-powder-hidden-danger" className="text-primary text-decoration-none fw-medium">read more</Link>
+            </p>
+          </section>
+
+          {/* Simple Ways to Identify Adulteration in Chilli Powder at Home */}
+          <section className="mb-5">
+            <h2 className="fw-bold mb-4">Simple Ways to Identify Adulteration in Chilli Powder at Home</h2>
+            <p className="text-muted lh-lg mb-3">
+              You do not always need a laboratory to detect poor-quality chilli powder. Discover simple home tests, like the water test and palm rub test, to ensure your chilli powder is pure and safe for your family. <Link to="/knowledge-hub/how-to-identify-adulteration-at-home" className="text-primary text-decoration-none fw-medium">read more</Link>
+            </p>
+          </section>
+
           {/* Forms Available */}
           {/* <section className="mb-5">
             <h2 className="fw-bold mb-4">Forms Available at CPN Foods</h2>
