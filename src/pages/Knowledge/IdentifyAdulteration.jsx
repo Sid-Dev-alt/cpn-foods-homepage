@@ -274,12 +274,6 @@ export default function IdentifyAdulteration() {
               <span className="badge bg-warning text-dark mb-2">HEALTH RISKS</span>
               <p className="small text-muted">Stomach irritation, Toxicity, Digestive issues.</p>
             </div>
-            <hr />
-            <div className="mt-4">
-              <h5 className="fw-bold mb-3">CPN Purity Promise</h5>
-              <p className="small text-muted">We ensure 100% pure chilli powder directly from farms with no added colours or fillers.</p>
-              <Link to="/sourcing-quality" className="btn btn-outline-danger btn-sm w-100 rounded-pill">Learn About Our Quality</Link>
-            </div>
           </div>
         </div>
       </div>

@@ -51,9 +51,9 @@ export default function ChilliAdulteration() {
       <Link to="/knowledge-hub" className="text-decoration-none text-danger fw-bold small d-inline-flex align-items-center mb-4 hover-translate-x-n3 transition-all">
         <HiArrowNarrowLeft className="me-2" /> BACK TO KNOWLEDGE HUB
       </Link>
-      
+
       {/* Article Header */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="row mb-5 pb-4 border-bottom"
@@ -87,7 +87,7 @@ export default function ChilliAdulteration() {
                 <div className="p-5 rounded-5 h-100 shadow-sm border-0" style={{ backgroundColor: '#f8f9fb' }}>
                   <h4 className="fw-bold mb-3" style={{ color: '#dc3545' }}>1. Artificial Colours</h4>
                   <p className="text-muted mb-0" style={{ fontSize: '1.05rem', lineHeight: '1.6' }}>
-                    Synthetic dyes like Sudan Red or Rhodamine B are added to make the powder appear brighter. 
+                    Synthetic dyes like Sudan Red or Rhodamine B are added to make the powder appear brighter.
                     These are industrial dyes not meant for consumption.
                   </p>
                 </div>
@@ -96,7 +96,7 @@ export default function ChilliAdulteration() {
                 <div className="p-5 rounded-5 h-100 shadow-sm border-0" style={{ backgroundColor: '#f8f9fb' }}>
                   <h4 className="fw-bold mb-3" style={{ color: '#dc3545' }}>2. Brick Powder & Red Soil</h4>
                   <p className="text-muted mb-0" style={{ fontSize: '1.05rem', lineHeight: '1.6' }}>
-                    Finely ground brick powder, red soil, or sand are used to increase weight and volume, 
+                    Finely ground brick powder, red soil, or sand are used to increase weight and volume,
                     which can harm digestion.
                   </p>
                 </div>
@@ -113,7 +113,7 @@ export default function ChilliAdulteration() {
                 <div className="p-5 rounded-5 h-100 shadow-sm border-0" style={{ backgroundColor: '#f8f9fb' }}>
                   <h4 className="fw-bold mb-3" style={{ color: '#dc3545' }}>4. Oil Extracted Waste</h4>
                   <p className="text-muted mb-0" style={{ fontSize: '1.05rem', lineHeight: '1.6' }}>
-                    Leftover waste after extracting chilli oil is dried and powdered. 
+                    Leftover waste after extracting chilli oil is dried and powdered.
                     This residue lacks flavour, aroma, and nutrition.
                   </p>
                 </div>
@@ -222,12 +222,8 @@ export default function ChilliAdulteration() {
               <span className="badge bg-success mb-2">QUICK TEST</span>
               <p className="small text-muted">Water test: Pure powder settles slowly.</p>
             </div>
-            <hr />
-            <div className="mt-4">
-              <h5 className="fw-bold mb-3">CPN Purity Promise</h5>
-              <p className="small text-muted">We ensure 100% pure chilli powder directly from farms with no added colours or fillers.</p>
-              <Link to="/sourcing-quality" className="btn btn-outline-danger btn-sm w-100 rounded-pill">Learn About Our Quality</Link>
-            </div>
+
+
           </div>
         </div>
       </div>
