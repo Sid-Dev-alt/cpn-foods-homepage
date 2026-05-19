@@ -157,7 +157,7 @@ function Shop() {
         query += `&idealWith=${activeMeals.join(',')}`;
       }
 
-      const API_URL = import.meta.env.VITE_API_URL || 'https://cpn-backend-xmcl.onrender.com';
+      const API_URL = import.meta.env.VITE_API_URL || 'http://168.144.112.207:8080';
       const res = await axios.get(`${API_URL}/api/v1/masalas${query}`);
       setProducts(res.data);
     } catch (error) {
