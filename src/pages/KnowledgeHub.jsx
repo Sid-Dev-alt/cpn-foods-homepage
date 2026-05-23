@@ -5,6 +5,13 @@ import { FaBookOpen, FaLightbulb, FaLeaf, FaShieldAlt } from 'react-icons/fa';
 
 const articles = [
   {
+    title: "The Hidden Truth About Chilli Powder: Common Adulterants Found in the Market",
+    excerpt: "Discover the common adulterants found in chilli powder, their health risks, and simple home tests to identify adulteration.",
+    link: "/knowledge-hub/chilli-powder-adulteration-guide",
+    category: "Food Safety",
+    icon: <FaShieldAlt className="text-danger" />
+  },
+  {
     title: "Simple Ways to Identify Adulteration in Chilli Powder at Home",
     excerpt: "Learn simple home tests to identify adulteration in chilli powder like the water test, palm rub test, and more.",
     link: "/knowledge-hub/how-to-identify-adulteration-at-home",

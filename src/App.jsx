@@ -15,6 +15,7 @@ import MoringaSuperfood from './pages/Knowledge/MoringaSuperfood';
 import SpicePreservation from './pages/Knowledge/SpicePreservation';
 import ChilliAdulteration from './pages/Knowledge/ChilliAdulteration';
 import IdentifyAdulteration from './pages/Knowledge/IdentifyAdulteration';
+import ChilliAdulterationGuide from './pages/Knowledge/ChilliAdulterationGuide';
 
 import FAQs from './pages/FAQs';
 import Contact from './pages/Contact';
@@ -56,6 +57,8 @@ function App() {
             {/* Knowledge Hub */}
             <Route path="/knowledge" element={<KnowledgeHub />} />
             <Route path="/knowledge-hub" element={<KnowledgeHub />} />
+            <Route path="/knowledge-hub/chilli-powder-adulteration-guide" element={<ChilliAdulterationGuide />} />
+            <Route path="/chilli-powder-adulteration-guide" element={<ChilliAdulterationGuide />} />
             <Route path="/knowledge-hub/how-to-detect-fake-chilli-powder" element={<ChilliAdulteration />} />
             <Route path="/knowledge-hub/adulteration-in-chilli-powder-hidden-danger" element={<ChilliAdulteration />} />
             <Route path="/knowledge-hub/how-to-identify-adulteration-at-home" element={<IdentifyAdulteration />} />
